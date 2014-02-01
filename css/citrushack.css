@@ -1,0 +1,63 @@
+body {
+    padding-bottom: 20px;
+}
+.navbar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.jumbotron {
+    background: url("img/bourns-bcoe-optomized.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: 0% 100%;
+    color: #FFFF66;
+}
+
+#sponsor-container, #host-container {
+    text-align: center;
+    color: #ff9900;
+}
+
+#marketing {
+    background-color: #FFFFFF;
+}
+
+#top-half {
+    background-color: #2D6CC0;
+}
+
+.navbar-static-top a {
+    color: #FFFFFF;
+}
+
+.navbar-static-top .navbar-header > a:hover,
+.navbar-static-top .navbar-nav > li > a:hover,
+.navbar-static-top .navbar-nav > li > a:focus {
+    background-color: #2D6CC0;
+    color: #FF9900;
+}
+
+.navbar-header > button {
+    background-color: #FFFFFF;
+}
+
+.icon-bar {
+    background-color: #DDDDDD;
+}
+
+.logos {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logos > a {
+    margin-left: auto;
+    margin-right: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+}
+
+.acm {
+    height: 150px;
+}
