@@ -20,9 +20,25 @@ body {
 */
 
 .jumbotron {
+    position: relative;
+    background: url("../img/courtyard.jpg") no-repeat;
+    background-size: cover;
+}
+
+#jumbotron-white {
+    width: 380px;
+    background-color: #EEEEEE;
+    padding-bottom: 50px;
+    opacity: 0.8;
+}
+
+.register-bar {
+    margin-top: 20px;
+    position: relative;
 }
 
 .tagline {
+    font-size: 15px;
 }
 
 #sponsor-container, #host-container {
@@ -80,13 +96,12 @@ body {
     height: 88px;
     border-radius: 66px;
     border: 2px solid #EE3824;
-    font-size: 20px;
+    font-size: 13px;
     color: #EE3824;
     line-height: 88px;
     text-align: center;
     text-decoration: none;
     background: #EEEEEE;
-
 }
 
 .register-button:hover {
@@ -101,17 +116,29 @@ body {
     height: 88px;
     border-radius: 66px;
     border: 2px solid #EE3824;
-    font-size: 12px;
+    font-size: 13px;
     color: #EEEEEE;
-    line-height: 88px;
     text-align: center;
     text-decoration: none;
     background: #EE3824;
-
 }
 
 .date-button:hover {
     color: #EEEEEE;
     background: #EE3824;
     text-decoration: none;
+}
+
+#date-text {
+    position: relative;
+    top: 13px;
+}
+
+.date-button > span > hr {
+    border: none;
+    height: 3px;
+    background-color: #FFFFFF;
+    width: 33px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
