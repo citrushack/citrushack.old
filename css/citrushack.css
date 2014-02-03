@@ -134,12 +134,24 @@ body {
 
 /* FAQ */
 /* 404041 */
+@media(max-width:767px) {
 #faq {
-    background-color: #F7F7F7;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 150px;
-    padding-right: 150px;
+        background-color: #F7F7F7;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media(min-width:768px) {
+#faq {
+        background-color: #F7F7F7;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
 }
 
 h4 {
@@ -147,12 +159,22 @@ h4 {
 }
 
 /* Sponsor and Logos */
-
+@media(max-width:767px) {
 #sponsor-container {
-    padding-left: 150px;
-    padding-right: 150px;
-    text-align: left;
-    color: #ff9900;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: left;
+        color: #ff9900;
+    }
+}
+
+@media(min-width:768px) {
+#sponsor-container {
+        padding-left: 150px;
+        padding-right: 150px;
+        text-align: left;
+        color: #ff9900;
+    }
 }
 
 #sponsor-container > h3 {
@@ -163,26 +185,17 @@ h4 {
     text-decoration: none;
 }
 
-.icon-bar {
-    background-color: #DDDDDD;
-}
-
 .logos {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
-}
-
-.logos > a {
-    margin-left: 25px;
-    margin-right: 25px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 50% 0%;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .sponsor {
     height: 120px;
+
 }
 
 .col-lg-6 h4 {
@@ -190,6 +203,18 @@ h4 {
 }
 
 /* Footer */
+@media(max-width:767px) {
+#footer {
+    position: relative;
+    bottom: -30px;
+    background-color: #EE3824;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+}
+@media(min-width:768px) {
 #footer {
     position: relative;
     bottom: -30px;
@@ -198,6 +223,7 @@ h4 {
     padding-bottom: 50px;
     padding-left: 150px;
     padding-right: 150px;
+}
 }
 
 #footer a {
