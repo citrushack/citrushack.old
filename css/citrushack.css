@@ -235,3 +235,7 @@ h4 {
     font-family: Calibri, Verana, sans-serif;
     color: #EEEEEE;
 }
+
+.row {
+    margin-right: 0px;
+}
