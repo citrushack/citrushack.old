@@ -6,11 +6,26 @@ body {
     margin-bottom: 20px;
 }
 
+
+/* EE3824 */
+
+/*
 .jumbotron {
-    background: url("img/bourns-bcoe-optomized.jpg") no-repeat center center;
+    background: url("../img/logo-transparent.png") no-repeat center center;
     background-size: cover;
     background-position: 0% 100%;
-    color: #FFFF66;
+    color: #EE3824;
+}
+*/
+
+.jumbotron {
+    position: relative;
+    top: -180px;
+}
+
+.tagline {
+    position: relative;
+    top: -60px;;
 }
 
 #sponsor-container, #host-container {
@@ -23,7 +38,7 @@ body {
 }
 
 #top-half {
-    background-color: #2D6CC0;
+    background-color: #EE3824;
 }
 
 .navbar-static-top a {
