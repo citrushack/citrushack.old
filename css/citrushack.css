@@ -21,14 +21,20 @@ body {
 
 .jumbotron {
     position: relative;
-    background: url("../img/courtyard.jpg") no-repeat;
+    background: url("../img/bg.jpg") no-repeat;
     background-size: cover;
+    margin-bottom: 0px;
 }
 
 #jumbotron-white {
-    width: 380px;
+    width: 320px;
     background-color: #EEEEEE;
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
     opacity: 0.8;
 }
 
@@ -38,7 +44,9 @@ body {
 }
 
 .tagline {
-    font-size: 15px;
+    margin-top: 40px;
+    font-size: 10pt;
+    font-family: Calibri, Verdana, sans-serif;
 }
 
 #sponsor-container, #host-container {
@@ -46,9 +54,6 @@ body {
     color: #ff9900;
 }
 
-#marketing {
-    background-color: #FFFFFF;
-}
 
 #top-half {
     background-color: #EE3824;
@@ -92,40 +97,44 @@ body {
 
 .register-button {
     display: inline-block;
+    margin-left: 10px;
     width: 88px;
     height: 88px;
     border-radius: 66px;
-    border: 2px solid #EE3824;
+    border: 3px solid #FFFFFF;
     font-size: 13px;
-    color: #EE3824;
+    font-weight: 500;
+    color: #FFFFFF;
     line-height: 88px;
     text-align: center;
     text-decoration: none;
-    background: #EEEEEE;
 }
 
 .register-button:hover {
-    color: #EEEEEE;
-    background: #EE3824;
+    color: #FFFFFF;
+    border-color: #EE3824;
+    background-color: #EE3824;
     text-decoration: none;
 }
 
 .date-button {
     display: inline-block;
+    margin-right: 10px;
     width: 88px;
     height: 88px;
     border-radius: 66px;
-    border: 2px solid #EE3824;
+    border: 3px solid #FFFFFF;
     font-size: 13px;
-    color: #EEEEEE;
+    font-weight: 500;
+    color: #FFFFFF;
     text-align: center;
     text-decoration: none;
-    background: #EE3824;
 }
 
 .date-button:hover {
-    color: #EEEEEE;
-    background: #EE3824;
+    color: #FFFFFF;
+    background-color: #EE3824;
+    border-color: #EE3824;
     text-decoration: none;
 }
 
@@ -136,9 +145,36 @@ body {
 
 .date-button > span > hr {
     border: none;
-    height: 3px;
+    height: 2px;
     background-color: #FFFFFF;
     width: 33px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
+/* Blurb after landing page */
+#description {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#description-tagline {
+    color: #EE3824;
+}
+
+/* FAQ */
+/* 404041 */
+#faq {
+    background-color: #F7F7F7;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+h4 {
+    color: #404041;
+}
+
