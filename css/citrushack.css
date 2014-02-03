@@ -127,7 +127,8 @@ body {
     background-color: #EE3824;
 }
 
-#description-tagline {
+.description-tagline {
+    font-size: 200%;
     color: #FFFFFF;
 }
 
@@ -137,8 +138,8 @@ body {
     background-color: #F7F7F7;
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 h4 {
@@ -148,8 +149,18 @@ h4 {
 /* Sponsor and Logos */
 
 #sponsor-container {
-    text-align: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: left;
     color: #ff9900;
+}
+
+#sponsor-container > h3 {
+    color: #EE3824;
+}
+
+#sponsor-container > h3 > a{
+    text-decoration: none;
 }
 
 .icon-bar {
@@ -174,4 +185,27 @@ h4 {
     height: 120px;
 }
 
+.col-lg-6 h4 {
+    margin-top: 30px;
+}
+
 /* Footer */
+#footer {
+    position: relative;
+    bottom: -30px;
+    background-color: #EE3824;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+#footer a {
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+#footer h6 {
+    font-family: Calibri, Verana, sans-serif;
+    color: #EEEEEE;
+}
