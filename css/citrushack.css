@@ -10,15 +10,6 @@ body {
 
 /* EE3824 */
 
-/*
-.jumbotron {
-    background: url("../img/logo-transparent.png") no-repeat center center;
-    background-size: cover;
-    background-position: 0% 100%;
-    color: #EE3824;
-}
-*/
-
 .jumbotron {
     position: relative;
     background: url("../img/bg.jpg") no-repeat;
@@ -35,7 +26,6 @@ body {
     padding-top: 50px;
     padding-left: 40px;
     padding-right: 40px;
-    opacity: 0.8;
 }
 
 .register-bar {
@@ -47,11 +37,6 @@ body {
     margin-top: 40px;
     font-size: 10pt;
     font-family: Calibri, Verdana, sans-serif;
-}
-
-#sponsor-container, #host-container {
-    text-align: center;
-    color: #ff9900;
 }
 
 
@@ -74,26 +59,7 @@ body {
     background-color: #FFFFFF;
 }
 
-.icon-bar {
-    background-color: #DDDDDD;
-}
 
-.logos {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.logos > a {
-    margin-left: auto;
-    margin-right: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 50% 0%;
-}
-
-.acm {
-    height: 150px;
-}
 
 .register-button {
     display: inline-block;
@@ -158,10 +124,11 @@ body {
     padding-bottom: 50px;
     padding-left: 100px;
     padding-right: 100px;
+    background-color: #EE3824;
 }
 
 #description-tagline {
-    color: #EE3824;
+    color: #FFFFFF;
 }
 
 /* FAQ */
@@ -178,3 +145,33 @@ h4 {
     color: #404041;
 }
 
+/* Sponsor and Logos */
+
+#sponsor-container {
+    text-align: center;
+    color: #ff9900;
+}
+
+.icon-bar {
+    background-color: #DDDDDD;
+}
+
+.logos {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.logos > a {
+    margin-left: 25px;
+    margin-right: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+}
+
+.sponsor {
+    height: 120px;
+}
+
+/* Footer */
