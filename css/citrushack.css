@@ -39,11 +39,11 @@ body {
     font-family: Calibri, Verdana, sans-serif;
 }
 
-
 #top-half {
     background-color: #EE3824;
 }
 
+/*
 .navbar-static-top a {
     color: #FFFFFF;
 }
@@ -58,7 +58,7 @@ body {
 .navbar-header > button {
     background-color: #FFFFFF;
 }
-
+*/
 
 
 .register-button {
@@ -95,6 +95,8 @@ body {
     color: #FFFFFF;
     text-align: center;
     text-decoration: none;
+    background-color: #EE3824;
+    border-color: #EE3824;
 }
 
 .date-button:hover {
@@ -177,11 +179,11 @@ h4 {
     }
 }
 
-#sponsor-container > h3 {
+#sponsor-container > h3, #sponsor-container > h5 {
     color: #EE3824;
 }
 
-#sponsor-container > h3 > a{
+#sponsor-container > h5 > a{
     text-decoration: none;
 }
 
@@ -193,9 +195,16 @@ h4 {
     padding-right: 0px;
 }
 
-.sponsor {
-    height: 120px;
+.logos a {
+    padding-left: 50px;
+}
 
+.sponsor.sendgrid {
+    height: 120px;
+}
+
+.sponsor.ucr {
+    width: 300px;
 }
 
 .col-lg-6 h4 {
@@ -229,10 +238,11 @@ h4 {
 #footer a {
     color: #EEEEEE;
     text-decoration: none;
+    font-family: Georgia, serif;
 }
 
-#footer h6 {
-    font-family: Calibri, Verana, sans-serif;
+#footer h6, #footer h3 {
+    font-family: Georgia, serif;
     color: #EEEEEE;
 }
 
