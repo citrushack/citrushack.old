@@ -43,24 +43,6 @@ body {
     background-color: #EE3824;
 }
 
-/*
-.navbar-static-top a {
-    color: #FFFFFF;
-}
-
-.navbar-static-top .navbar-header > a:hover,
-.navbar-static-top .navbar-nav > li > a:hover,
-.navbar-static-top .navbar-nav > li > a:focus {
-    background-color: #2D6CC0;
-    color: #FF9900;
-}
-
-.navbar-header > button {
-    background-color: #FFFFFF;
-}
-*/
-
-
 .register-button {
     display: inline-block;
     margin-left: 10px;
@@ -239,11 +221,22 @@ h4 {
 #footer a {
     color: #EEEEEE;
     text-decoration: none;
-    font-family: Georgia, serif;
+    font-family: Calibri, Arial, serif;
 }
 
-#footer h6, #footer h3 {
+#footer a:hover {
+    color: #6600CC;
+    text-decoration: none;
+    font-family: Calibri, Arial, serif;
+}
+
+#footer h6 {
     font-family: Georgia, serif;
+    color: #EEEEEE;
+}
+
+#footer h3 {
+    font-family: Calibri, Arial, sans-serif;
     color: #EEEEEE;
 }
 
