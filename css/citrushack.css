@@ -218,14 +218,13 @@ h4 {
 }
 }
 
-#footer a {
+#footer h3 a {
     color: #EEEEEE;
-    text-decoration: none;
+    text-decoration: underline;
     font-family: Calibri, Arial, serif;
 }
 
-#footer a:hover {
-    color: #6600CC;
+#footer h3 a:hover {
     text-decoration: none;
     font-family: Calibri, Arial, serif;
 }
@@ -233,6 +232,18 @@ h4 {
 #footer h6 {
     font-family: Georgia, serif;
     color: #EEEEEE;
+}
+
+#footer h6 a {
+    color: #EEEEEE;
+    text-decoration: underline;
+    font-family: Georgia, serif;
+}
+
+#footer h6 a:hover {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-family: Georgia, serif;
 }
 
 #footer h3 {
