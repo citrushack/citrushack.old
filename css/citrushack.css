@@ -28,6 +28,10 @@ body {
     padding-right: 40px;
 }
 
+#jumbotron-white > img {
+    height: 220px;
+}
+
 .register-bar {
     margin-top: 20px;
     position: relative;
@@ -111,13 +115,21 @@ body {
     background-color: #EE3824;
 }
 
+@media(max-width: 767px) {
 .description-tagline {
-    font-size: 200%;
+    font-size: 85%;
+    color: #FFFFFF;
+}
+}
+
+@media(min-width: 768px) {
+.description-tagline {
     color: #FFFFFF;
 }
 
+}
+
 /* FAQ */
-/* 404041 */
 @media(max-width:767px) {
 #faq {
         background-color: #F7F7F7;
