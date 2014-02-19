@@ -183,8 +183,6 @@ h4 {
 
 .logos {
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
     padding-left: 0px;
     padding-right: 0px;
 }
@@ -194,12 +192,21 @@ h4 {
     padding-right: 25px;
 }
 
+.logos a img {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
 .sponsor.sendgrid {
-    height: 120px;
+    width: 250px;
 }
 
 .sponsor.ucr {
     width: 300px;
+}
+
+.sponsor.riversideio {
+    width: 250px;
 }
 
 .col-lg-6 h4 {
