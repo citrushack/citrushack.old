@@ -1,0 +1,5 @@
+# vim related
+*.swp
+
+# sass related
+.sass-cache
