@@ -1,3 +1,6 @@
+# ignore all compiled stylesheets
+assets/css/*
+
 # vim related
 *.swp
 
