@@ -1,3 +1,6 @@
+#ignore npm packages
+node_modules/
+
 # ignore all compiled stylesheets
 assets/css/*
 
