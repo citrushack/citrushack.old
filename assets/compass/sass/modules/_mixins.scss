@@ -1,0 +1,11 @@
+/* mixins for entire project */
+
+/**
+  * sets the width and height of an element 
+    @width  {PX,EM,%}
+    @height {PX,EM,%} 
+  */
+@mixin set_size ($width, $height) {
+  width: $width;
+  height: $height;
+}

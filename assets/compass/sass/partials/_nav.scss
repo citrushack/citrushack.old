@@ -1,0 +1,15 @@
+/* All navigation related stuffs */
+
+nav {
+  @include set_size(100%,50px);
+  background-color: $light-orange;
+  
+  /* Make sure navbar is fixed to the very
+     top of the page */
+  position: fixed;
+  top:0px;
+}
+
+body {
+  height: 2000px;
+}
