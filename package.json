@@ -9,7 +9,9 @@
     "gulp-compass": "~1.1.9",
     "gulp-jshint": "~1.6.2",
     "gulp-uglify": "~0.3.0",
-    "gulp-concat": "~2.2.0"
+    "gulp-concat": "~2.2.0",
+    "gulp-rename": "~1.2.0",
+    "jshint-stylish": "~0.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,9 +1,10 @@
 var gulp    = require('gulp')
   , compass = require('gulp-compass')
   , uglify  = require('gulp-uglify')
+  , rename  = require('gulp-rename')
   , concat  = require('gulp-concat')
   , jshint  = require('gulp-jshint')
-  , clean   = require('gulp-clean');
+  , stylish = require('jshint-stylish');
 
 var paths = {
   /* paths needed for compass compilation. Will compile
@@ -24,10 +25,6 @@ var paths = {
        internal = our scripts */ 
     external : ['./assets/js/vendors/jquery-1.11.1.js'] 
   , internal : ['./assets/js/src/nav.js']
-    /* where we want to save final processed file.
-       we just put it in the same directory as the 
-       other javascripts */
-  , min_dest : './assets/js/'
   }
 };
 
@@ -57,9 +54,21 @@ gulp.task('scripts', function(){
 
   gulp.src(scripts)
     .pipe(jshint())
-    .pipe(jshint.reporter('default')) //use default logger
-    .pipe(jshint.reporter('fail'))    //fail build on error
-    .pipe(uglify())                   //minify each script
-    .pipe(concat('citrushack.min.js'))//concatenate the scripts
-    .pipe(gulp.dest(paths.javascripts.min_dest));
+    .pipe(jshint.reporter(stylish))   //use default logger
+    .pipe(concat('citrushack.js'))      //concatenate the scripts    
+   // .pipe(uglify())                   //minify the resulting script
+    .pipe(gulp.dest('./assets/js'));    //save script
 });
+
+/**
+  * This task watchs for changes and re-runs tasks. 
+  */
+gulp.task('watch', function(){
+  gulp.watch('./assets/compass/sass/**/*.scss', ['compass']);
+  gulp.watch('./assets/js/**/*.js', ['scripts']);
+});
+
+/**
+  * Default task to run when gulp is called
+  */
+gulp.task('default', ['compass', 'scripts', 'watch']);
