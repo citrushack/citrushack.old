@@ -22,7 +22,7 @@ var paths = {
 
        external = vendor scripts
        internal = our scripts */ 
-    external : [] 
+    external : ['./assets/js/vendors/jquery-1.11.1.js'] 
   , internal : ['./assets/js/src/nav.js']
     /* where we want to save final processed file.
        we just put it in the same directory as the 
