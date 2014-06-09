@@ -3,7 +3,7 @@
 
 /* All modules. Must be loaded before partials and vendor files */
 @import "modules/mixins";
-@import "modules/colors";
+@import "modules/variables";
 
 /* All vendor files */
 @import "vendors/bootstrap-custom";
