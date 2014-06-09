@@ -1,0 +1,7 @@
+/* landing section */
+
+#landing-screen {
+  @include set-size(100%,100%);
+  @include background-size(cover);
+  background-image: image-url('ucr-fixed.jpg');
+}
