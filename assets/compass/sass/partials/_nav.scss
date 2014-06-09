@@ -1,15 +1,20 @@
 /* All navigation related stuffs */
 
 nav {
-  @include set_size(100%,50px);
-  background-color: $light-orange;
-  
+  @include set-size(100%,50px);
+  /* Compass mixins. Controls transparency transition */
+  @include transition-property(all);
+  @include transition-duration(1s);
+  /* Set background color to completely transparent. It will
+     fade back in on scroll */
+  background-color: rgba($light_orange, 0);  
   /* Make sure navbar is fixed to the very
      top of the page */
   position: fixed;
   top:0px;
 }
 
-body {
-  height: 2000px;
+/* Used to make navbar not completely transparent */ 
+.nav-show {
+  background-color: rgba($light_orange, .5);
 }
