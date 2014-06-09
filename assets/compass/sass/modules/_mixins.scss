@@ -5,7 +5,7 @@
     @width  {PX,EM,%}
     @height {PX,EM,%} 
   */
-@mixin set_size ($width, $height) {
+@mixin set-size ($width, $height) {
   width: $width;
   height: $height;
 }
