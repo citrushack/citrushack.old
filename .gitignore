@@ -1,8 +1,11 @@
 #ignore npm packages
 node_modules/
 
-# ignore all compiled stylesheets
-assets/css/*
+# ignore compiled stylesheet
+assets/css/citrushack.css
+
+#ignore compiled js
+assets/js/citrushack.js
 
 # vim related
 *.swp
