@@ -11,20 +11,22 @@ var paths = {
      all *.scss in compass/sass. */ 
   compass : {
     config     : './assets/compass/config.rb'
-  , to_compile : './assets/compass/sass/*.scss'
+  , to_compile : './assets/compass/sass/citrushack.scss'
   , css        : './assets/css'
   , sass       : './assets/compass/sass'
   },
   /* paths needed for javascript processing. */
-  javascripts : {
+  javascript : {
     /* Add paths to scripts in the order you'd like them
-       concatenated. external scripts will be the first
-       to be combined 
-
-       external = vendor scripts
-       internal = our scripts */ 
-    external : ['./assets/js/vendors/jquery-1.11.1.js'] 
-  , internal : ['./assets/js/src/nav.js']
+       concatenated. */
+    scripts : [
+      './assets/js/src/nav.js'
+    , './assets/js/src/landing_screen.js'
+    ]
+    /* name of our final minified, combined script */
+  , main_script : 'citrushack.js'
+    /* location of main_script */
+  , location : 'assets/js'
   }
 };
 
@@ -47,17 +49,16 @@ gulp.task('compass', function(){
     concatenate them 
   */
 gulp.task('scripts', function(){
-  /* array of all our scripts. Vendor scripts come
-     first */
-  var scripts = paths.javascripts.external
-                  .concat(paths.javascripts.internal);
-
+  var scripts     = paths.javascript.scripts
+    , main_script = paths.javascript.main_script
+    , dest        = paths.javascript.location;
+    
   gulp.src(scripts)
     .pipe(jshint())
     .pipe(jshint.reporter(stylish))   //use default logger
-    .pipe(concat('citrushack.js'))      //concatenate the scripts    
-   // .pipe(uglify())                   //minify the resulting script
-    .pipe(gulp.dest('./assets/js'));    //save script
+    .pipe(concat(main_script))        //concatenate the scripts    
+    .pipe(uglify())                   //minify the resulting script
+    .pipe(gulp.dest(dest));           //save script
 });
 
 /**
