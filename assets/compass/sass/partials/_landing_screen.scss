@@ -1,7 +1,19 @@
 /* landing section */
 
-#landing-screen {
+#landing-bg {
   @include set-size(100%,100%);
   @include background-size(cover);
-  background-image: image-url('ucr-fixed.jpg');
+  @include transition-property(all);
+  @include transition-duration(1s);
+
+  position: relative;
+  background-image: linear-gradient(
+                      rgba(#000000, 0.5), 
+                      rgba(#000000, 0.5)),
+                    image-url('courtyard.jpg');
+  background-repeat: no-repeat;
+}
+
+.change {
+  @include filter(grayscale(100%));
 }
