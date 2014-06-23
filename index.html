@@ -8,11 +8,12 @@
   <meta name='keywords' content='hackathon,riverside,ucr,highlanders,programming,cs'>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
   <!-- end meta data -->
   
   <!-- start stylesheets --> 
   <link rel='stylesheet' type='text/css' href='assets/css/citrushack.css'>
+  <link rel='stylesheet' type='text/css' href='assets/css/monokai_sublime.css'>
   <!-- end stylesheets -->
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -28,11 +29,18 @@
   <!-- end navigation -->
 
   <!-- start landing screen -->
-  <div id='landing-screen'></div>
+  <div id='landing-bg'></div>
   <!-- end landing screen -->
-  
+
   <!-- start scripts -->
   <script src='assets/js/citrushack.js'></script>
+  <script src='assets/js/vendors/highlight.pack.js'></script>
+  <script src='assets/js/vendors/typed.js'></script>
+
+  <!-- Need to enable highlight.js syntax highlighting -->
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
   <!-- end scripts -->
 </body>
 </html>
