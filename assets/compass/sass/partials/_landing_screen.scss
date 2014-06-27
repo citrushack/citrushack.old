@@ -6,12 +6,40 @@
   @include transition-property(all);
   @include transition-duration(1s);
 
-  position: relative;
-  background-image: linear-gradient(
+  /* so landing bg still covers logo if the browser
+     is minimized vertically */ 
+  min-height: 500px;
+
+  /* darken background by adding a black linear gradient */
+  /*background-image: linear-gradient(
                       rgba(#000000, 0.5), 
-                      rgba(#000000, 0.5)),
-                    image-url('courtyard.jpg');
+                      rgba(#000000, 0.5)),*/
+  background-image: image-url('courtyard.jpg');
+
   background-repeat: no-repeat;
+
+  /* prevent content from dragging background around with 
+     its margin */
+  overflow: hidden;
+
+  #landing-content {
+    @include set-size($landing-content-width,$landing-content-height);
+    position:relative;
+    
+    /* center content */
+    top:50%;
+    left:50%;
+    margin-top: -($landing-content-height / 2);
+    margin-left: -($landing-content-width / 2);
+    
+    img {
+      display: block;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -($logo-img-width / 2);
+    }
+  }
 }
 
 .change {

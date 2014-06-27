@@ -20,8 +20,6 @@ var paths = {
     /* Add paths to scripts in the order you'd like them
        concatenated. */
     scripts : [
-      './assets/js/src/nav.js'
-    , './assets/js/src/landing_screen.js'
     ]
     /* name of our final minified, combined script */
   , main_script : 'citrushack.js'
@@ -52,7 +50,11 @@ gulp.task('scripts', function(){
   var scripts     = paths.javascript.scripts
     , main_script = paths.javascript.main_script
     , dest        = paths.javascript.location;
-    
+  
+  /* if we have no scripts to process, exit function */
+  if (scripts.length == 0)
+    return;
+
   gulp.src(scripts)
     .pipe(jshint())
     .pipe(jshint.reporter(stylish))   //use default logger
