@@ -1,0 +1,8 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html,body {
+  @include set-size(100%,100%);
+}

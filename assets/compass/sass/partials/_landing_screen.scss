@@ -1,47 +1,66 @@
 /* landing section */
+$landing-content-height:420px;
+$landing-content-width: $page-content-width;
+$landing-info-width: 500px;
+$landing-info-height: auto;
+$landing-font-color: $peppermint-white;
+$landing-font-color-strong: $citrus-orange; 
+
+#landing {
+  @include set-size(100%,100%); 
+}
 
 #landing-bg {
-  @include set-size(100%,100%);
-  @include background-size(cover);
-  @include transition-property(all);
-  @include transition-duration(1s);
+  background-image: image-url('hexabump.png');
+  background-repeat: repeat;
 
-  /* so landing bg still covers logo if the browser
-     is minimized vertically */ 
-  min-height: 500px;
-
-  /* darken background by adding a black linear gradient */
-  /*background-image: linear-gradient(
-                      rgba(#000000, 0.5), 
-                      rgba(#000000, 0.5)),*/
-  background-image: image-url('courtyard.jpg');
-
-  background-repeat: no-repeat;
-
+  min-height:100%;
+  min-width:100%;
+    
   /* prevent content from dragging background around with 
      its margin */
   overflow: hidden;
+  position: relative;
+}
 
-  #landing-content {
-    @include set-size($landing-content-width,$landing-content-height);
-    position:relative;
-    
-    /* center content */
-    top:50%;
-    left:50%;
-    margin-top: -($landing-content-height / 2);
-    margin-left: -($landing-content-width / 2);
-    
-    img {
-      display: block;
-      position: relative;
-      left: 50%;
-      right: 50%;
-      margin-left: -($logo-img-width / 2);
-    }
+#landing-content {
+  @include set-size($landing-content-width, $landing-content-height);
+  @include center-content($landing-content-width, $landing-content-height);
+}
+
+#logo {
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+
+#landing-info {
+  @include set-size($landing-info-width, $landing-info-height);
+  position: relative;
+  top: 15%;
+  
+  h1 {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 90%;
+    color: $landing-font-color;
+  }
+
+  strong {
+    font-weight: 700;
+    color: $landing-font-color-strong;
+  }
+
+  i {
+    font-weight: 300italic;
+    font-size: 22px;
+    color: darken($landing-font-color, 10%);
   }
 }
 
-.change {
-  @include filter(grayscale(100%));
+#large-orange {
+  position: absolute;
+  bottom:0%;
+  right:0%;
 }
