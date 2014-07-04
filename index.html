@@ -29,34 +29,48 @@
 </head>
 <body>
   <!-- start navigation -->
-  <nav>
+  <nav class='navbar navbar-default navbar-fixed-bottom' role='navigation'>
     <div class='container'>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand"><img class="logo" src="assets/img/logo.png"></div>
+        </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li> 
+        </ul>
+      </div><!--/.nav-collapse --> 
     </div>
   </nav>
   <!-- end navigation -->
 
   <!-- start landing screen -->
-  <div id='landing' name='section1'>
-    <div id='landing-bg'>
-      <div id='landing-content'>
-        <img id='logo' src='assets/img/logo.png'></img>
-        <div id='landing-info'>
-          <h1>Welcome to Riverside's <strong>first student</strong> organized 
-              Hackathon!<br><i>April 20, 2015</i></h1>
-        </div>
-        <img id='large-orange' src='assets/img/laptop-557x284.png'></img>
-      </div>
+  <!--
+  <div class='container-fluid' id='landing'>
+    <h1 style='height:20%'>asdfdsf</h1>
+    <div style='display:table; height:80%'>  
+    <div style='display:table-cell; width: 30%;height:20%; background-color:grey;'>
     </div>
-  </div>
+    <div style='display:table-cell; vertical-align:middle; text-align:center; background-color:green;'>
+      <img class='img-responsive' src='assets/img/laptop.png' style='display:inline-block;'></img>
+    </div>
+    </div>
+  </div> -->
   <!-- end landing screen -->
 
   <!-- start general info -->
-  <div id='general-info-bg' name='section2'>
-  </div>
   
   <!-- start scripts -->
   <!-- vendors -->
   <script src='assets/js/vendors/jquery-1.11.1.js'></script> 
+  <script src='assets/js/vendors/bootstrap.min.js'></script>
   <script src='assets/js/vendors/highlight.pack.js'></script>
   <script src='assets/js/vendors/typed.js'></script>
   <!-- our minified compiled script -->

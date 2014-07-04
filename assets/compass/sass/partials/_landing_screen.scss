@@ -2,12 +2,12 @@
 
 #landing {
   @include set-size(100%,100%); 
-  background-image: image-url('hexabump.png');
-  background-repeat: repeat;
-  position: relative;
+
   /* prevent content from dragging background around with 
      its margin */
   overflow: hidden;
-  /* dont cover other elements */
-  z-index: -9999;
+}
+
+ul li {
+  display:inline;
 }
