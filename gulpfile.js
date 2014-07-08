@@ -20,6 +20,8 @@ var paths = {
     /* Add paths to scripts in the order you'd like them
        concatenated. */
     scripts : [
+      './assets/js/source/landing_screen.js'
+    , './assets/js/source/faq.js'
     ]
     /* name of our final minified, combined script */
   , main_script : 'citrushack.js'

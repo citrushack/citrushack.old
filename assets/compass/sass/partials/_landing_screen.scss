@@ -6,8 +6,11 @@
   /* prevent content from dragging background around with 
      its margin */
   overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
 
-ul li {
-  display:inline;
+#landing > img {
+  width: 100%;
+  height: 100%;
 }

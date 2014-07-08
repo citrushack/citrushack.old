@@ -1,0 +1,10 @@
+#faq {
+  background-image: image-url('sprinkles.png');
+  background-repeat: repeat;
+}
+
+.faq-item {
+  background-color: #FFFFEE;
+  @include border-radius(20%);
+  padding:20px;
+}
