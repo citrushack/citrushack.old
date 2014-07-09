@@ -1,10 +1,33 @@
+$faq-item-radius: 20%;
+$faq-item-padding: 10px;
+$faq-item-bottom-margin: 20px;
+$faq-item-bg-color: $cream-white;
+$faq-item-h3-bg-color: $light-orange;
+
 #faq {
   background-image: image-url('sprinkles.png');
   background-repeat: repeat;
 }
 
 .faq-item {
-  background-color: #FFFFEE;
-  @include border-radius(20%);
-  padding:20px;
+  @include border-top-radius($faq-item-radius);
+  @include border-bottom-radius($faq-item-radius);
+  background-color: $faq-item-bg-color;
+  margin-bottom: $faq-item-bottom-margin;
+  text-align: center;
+}
+
+.faq-item p {
+  padding: $faq-item-padding;
+}
+.faq-item h3 {
+  @include border-top-radius($faq-item-radius);
+  background-color: $faq-item-h3-bg-color;
+  padding: $faq-item-padding;
+  margin: 0;
+}
+
+hr {
+  background-color: #000011;
+  border-color: #000011;
 }
