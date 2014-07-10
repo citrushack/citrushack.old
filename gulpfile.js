@@ -20,7 +20,8 @@ var paths = {
     /* Add paths to scripts in the order you'd like them
        concatenated. */
     scripts : [
-      './assets/js/source/global.js'
+      './assets/js/source/nav.js'
+    , './assets/js/source/global.js'
     , './assets/js/source/landing_screen.js'
     , './assets/js/source/faq.js'
     ]

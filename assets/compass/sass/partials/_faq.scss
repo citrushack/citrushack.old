@@ -1,5 +1,5 @@
 $faq-item-radius: 20%;
-$faq-item-padding: 10px;
+$faq-item-padding: 20px;
 $faq-item-bottom-margin: 20px;
 $faq-item-bg-color: $cream-white;
 $faq-item-h3-bg-color: $light-orange;
@@ -7,6 +7,7 @@ $faq-item-h3-bg-color: $light-orange;
 #faq {
   background-image: image-url('sprinkles.png');
   background-repeat: repeat;
+  min-height: 100%;
 }
 
 .faq-item {
