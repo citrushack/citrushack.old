@@ -1,0 +1,30 @@
+$sponsors-padding-bottom: 50px;
+
+$sponsor-lg-height: 200px;
+$sponsor-md-height: 100px;
+
+$sponsor-md-padding: 15px;
+
+#sponsors {
+  padding-bottom: $sponsors-padding-bottom;
+  background-color: #FFFFEE;
+}
+
+.sponsor-col {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.sponsor-lg {
+  max-height: $sponsor-lg-height;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.sponsor-md {
+  height: $sponsor-md-height;
+  vertical-align: middle;
+  display: inline-block;
+  padding-top: $sponsor-md-padding;
+  padding-bottom: $sponsor-md-padding;
+}

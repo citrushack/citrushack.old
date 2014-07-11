@@ -1,13 +1,28 @@
 /* landing section */
 
+$landing-overlay-color: $citrus-orange;
+
 #landing {
   @include set-size(100%,100%); 
 
-  /* prevent content from dragging background around with 
-     its margin */
-  overflow: hidden;
   padding: 0;
   margin: 0;
+}
+
+#landing-bg {
+  @include set-size(100%,100%);
+  @include background-size(cover);
+  background-image: linear-gradient(
+                      rgba($landing-overlay-color, 0.3),
+                      rgba($landing-overlay-color, 0.3)),
+                    image-url('ucr-campus.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: fixed;
+  z-index: -9999; 
+  /* prevent content from dragging background around */
+  overflow: hidden;
 }
 
 #landing > img {
