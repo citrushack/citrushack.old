@@ -64,7 +64,7 @@ gulp.task('scripts', function(){
     .pipe(jshint())
     .pipe(jshint.reporter(stylish))   //use default logger
     .pipe(concat(main_script))        //concatenate the scripts    
-    .pipe(uglify())                   //minify the resulting script
+    //.pipe(uglify())                   //minify the resulting script
     .pipe(gulp.dest(dest));           //save script
 });
 

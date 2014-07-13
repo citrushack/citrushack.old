@@ -9,13 +9,13 @@ $landing-overlay-color: $citrus-orange;
   margin: 0;
 }
 
-#landing-bg {
+@mixin landing-background($image-src) {
   @include set-size(100%,100%);
   @include background-size(cover);
   background-image: linear-gradient(
                       rgba($landing-overlay-color, 0.3),
                       rgba($landing-overlay-color, 0.3)),
-                    image-url('ucr-campus.jpg');
+                      image-url($image-src);
   background-repeat: no-repeat;
   background-position: center;
 
@@ -24,3 +24,18 @@ $landing-overlay-color: $citrus-orange;
   /* prevent content from dragging background around */
   overflow: hidden;
 }
+
+/* desktop-landing-background */
+@media (min-width: 321px) {
+  #landing-bg {
+    @include landing-background('ucr-campus.jpg');
+  }
+}
+
+/* mobile-landing-background */
+@media (max-width: 320px) { 
+#landing-bg {
+    @include landing-background('small-ucr-campus.jpg');
+  }
+}
+

@@ -13,3 +13,6 @@ assets/js/citrushack.js
 # sass related
 .sass-cache
 .DS_Store
+
+#firebase
+firebase.json
