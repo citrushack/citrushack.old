@@ -2,13 +2,10 @@
 
 $landing-overlay-color: $citrus-orange;
 
-#landing {
-  @include set-size(100%,100%); 
-
-  padding: 0;
-  margin: 0;
-}
-
+/**
+  * sets the landing background, given a url
+    @image-src specifies URL of the image
+  */
 @mixin landing-background($image-src) {
   @include set-size(100%,100%);
   @include background-size(cover);
@@ -23,6 +20,13 @@ $landing-overlay-color: $citrus-orange;
   z-index: -9999; 
   /* prevent content from dragging background around */
   overflow: hidden;
+}
+
+#landing {
+  @include set-size(100%,100%); 
+
+  padding: 0;
+  margin: 0;
 }
 
 /* desktop-landing-background */
