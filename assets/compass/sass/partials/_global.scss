@@ -11,5 +11,6 @@ html {
 body {
   @include set-size(100%,100%);
   /* needed for scrollspy */
+  font-family: 'Lato', sans-serif;
   position: relative;
 }
