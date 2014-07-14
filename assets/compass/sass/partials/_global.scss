@@ -11,6 +11,23 @@ html {
 body {
   @include set-size(100%,100%);
   /* needed for scrollspy */
-  font-family: 'Lato', sans-serif;
   position: relative;
+  -webkit-animation-duration: 0.1s;
+  -webkit-animation-name: fontfix;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0.1s;
+}
+
+@-webkit-keyframes fontfix {
+	from {opacity: 1; }
+	to {opacity: 1;}
+}
+
+h1, h2, h3, h4, p {
+	font-family: 'Lato', sans-serif;
+}
+
+p {
+	font-size: 1.35em;
 }
