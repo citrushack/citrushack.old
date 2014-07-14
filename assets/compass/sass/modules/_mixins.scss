@@ -22,3 +22,13 @@
   margin-left: -($width / 2);
   margin-top: -($height / 2);
 }
+
+/**
+ * Sets css transition 
+   @property {Name} of the CSS attribute 
+   @duration {S} time in seconds
+ */
+@mixin set-transition ($property, $duration) {
+  @include transition-property($property);
+  @include transition-duration($duration);
+}
