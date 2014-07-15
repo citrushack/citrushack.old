@@ -1,20 +1,15 @@
 $sponsors-padding-bottom: 50px;
 $sponsor-lg-height: 200px;
 $sponsor-md-height: 100px;
-$sponsor-md-padding: 15px;
-$sponsor-opacity: .5;
+$sponsor-md-padding: 15px;`
+$sponsor-bg: white;
 
 #sponsors {
   padding-bottom: $sponsors-padding-bottom;
-  background-color: #FFFFEE;
+  background-color: $sponsor-bg;
 
-  a {
-    @include set-transition(opacity,1s);
-    opacity: $sponsor-opacity;
-  }
-
-  a:hover {
-    opacity: 1;
+  .container h1 {
+    color: $orange-lvl3;
   }
 }
 
@@ -34,3 +29,4 @@ $sponsor-opacity: .5;
   padding-top: $sponsor-md-padding;
   padding-bottom: $sponsor-md-padding;
 }
+
