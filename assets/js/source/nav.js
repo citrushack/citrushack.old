@@ -5,12 +5,14 @@ $(document).ready(function(){
 
   /* animation for href anchor to different segments
      of page */
-  $nav.find("a").click(function(e) {
+  $nav.find('a').click(function(e) {
     e.preventDefault();
-    var section = $(this).attr("href");
+    var section = $(this).attr('href');
 
-    $("html, body").animate({
+    $('html, body').animate({
         scrollTop: $(section).offset().top
+      , easing: 'easeInQuint'
+      , duration: '500'
     });
   });
 });
