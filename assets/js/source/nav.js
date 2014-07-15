@@ -10,7 +10,9 @@ $(document).ready(function(){
     var section = $(this).attr('href');
 
     $('html, body').animate({
-        scrollTop: $(section).offset().top
+        /* +2 px to prevent the scroll effect from confusing the 
+           scroll spy */
+        scrollTop: $(section).offset().top + 2
       , easing: 'easeInQuint'
       , duration: '500'
     });
