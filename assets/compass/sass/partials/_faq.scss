@@ -1,18 +1,22 @@
 $faq-item-bottom-margin: 20px;
-$faq-item-color: $bloodorange-red;
+$faq-item-color: $blue-lvl2;
+$faq-bg: $ghost-gray;
 
 #faq {
-  background-image: image-url('sprinkles.png');
-  background-repeat: repeat;
+  background-color: $faq-bg;
   min-height: 100%;
+
+  h1 {
+    color: $faq-item-color;
+  }
 }
 
 .faq-item.panel-primary {
-  border-color: $bloodorange-red;
+  border-color: $faq-item-color;
 }
 
 .faq-item .panel-heading {
-  background-color: #ee3925 !important;
+  background-color: $faq-item-color !important;
 }
 
 .faq-item {
