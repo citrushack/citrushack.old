@@ -61,7 +61,7 @@ gulp.task('scripts', function(){
     return;
 
   gulp.src(scripts)
-    .pipe(jshint())
+    .pipe(jshint({"laxcomma" : true}))
     .pipe(jshint.reporter(stylish))   //use default logger
     .pipe(concat(main_script))        //concatenate the scripts    
     .pipe(uglify())                   //minify the resulting script
