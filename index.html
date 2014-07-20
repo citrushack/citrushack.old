@@ -8,7 +8,7 @@
   <meta name='keywords' content='hackathon,riverside,ucr,highlanders,programming,cs'>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <!-- end meta data -->
   
   <!-- start stylesheets --> 
@@ -38,7 +38,6 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div class="navbar-brand"><img class="logo" src="assets/img/logo.png"></div>
         </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
@@ -53,14 +52,31 @@
 
   <!-- start landing screen -->
   <div class='container-fluid' id='landing'>
-    <div id='landing-bg'></div>
+    <div id='landing-content'>
+      <img src='assets/img/logo.png' class='img-responsive'></img>
+      <div class='row'>
+        <div class='col-md-12 text-center'>
+          <h1 class='hidden-sm hidden-xs' id='landing-text'>
+            Inland Empire's <strong>biggest hackathon</strong>
+          </h1>
+        </div>
+        <div class='col-md-6'>
+          <button class='btn btn-block btn-default'>Register</button>
+        </div>
+        <div class='col-md-6'>
+          <button class='btn btn-block btn-default'>Information</button>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- end landing screen -->
 
   <!-- start hosted by -->
+  <!--
   <div class='container-fluid' id='hosted-by'>
     <img src='assets/img/acmlogoucr.png' class='img-responsive'></img>
   </div>
+  -->
   <!-- end hosted by -->
 
   <!-- start faq -->
@@ -166,7 +182,10 @@
     </div>
   </div>
   <!-- end sponsors -->
-  
+ 
+  <!-- start Judges -->
+  <!-- end Judges -->
+
   <!-- dummy block, so nav doesnt cover content -->
   <div style='height:50px;width:auto;'></div>
   <!-- dummy dumb done -->

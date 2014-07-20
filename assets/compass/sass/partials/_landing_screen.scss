@@ -7,13 +7,10 @@ $landing-overlay-deg: 135deg;
 
 #landing {
   @include set-size(100%,100%); 
-
+  
   padding: 0;
   margin: 0;
-}
-
-#landing-bg {
-  @include set-size(100%,100%);
+  
   @include background-size(cover);
   background-image: linear-gradient(
                       $landing-overlay-deg,
@@ -22,11 +19,26 @@ $landing-overlay-deg: 135deg;
                       rgba($landing-overlay-color-2, $landing-overlay-opacity)),
                     image-url('ucr-campus.jpg');
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
 
-  position: fixed;
-  z-index: -9999; 
   /* prevent content from dragging background around */
   overflow: hidden;
-}
+ 
+  #landing-content {
+    @include center-content();
 
+    button {
+      background-color: rgba(#000000,0);
+      color: white;
+    }
+  }
+
+  #landing-text {
+    color: white;
+
+    strong {
+      color: $bloodorange-red;
+    }
+  }
+}
