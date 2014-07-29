@@ -22,9 +22,9 @@ $(document).ready(function(){
 
   /* Colors to use for blocks. */
   var block_colors = [
-    "#ECECEC" // pure white
-  , "#B3B3B3" // light grey
-  , "#666666" // medium grey
+    "#ECECEC" 
+  , "#B3B3B3"
+  , "#666666"
   ];
 
   /* Will hold all of our block objects */
@@ -91,14 +91,18 @@ $(document).ready(function(){
       ++counter;
   }
 
+  /**
+    * Resizes canvas when window is resized. Needed because setting
+      canvas width/height to 100% doesn't seem to work 
+    */
   $(window).resize(function(){
     $('#logo-bg').css("width" , $(window).width());
     $('#logo-bg').css("height" , $(window).height());
   });
 
   /*
-   * Used to redraw adjust canvas width and height
-   * and redraw view when resized
+   * Used to redraw canvas when its width/height is changed 
+   * @event {Event} <- this is provided by paper.js
    */
   function onResize (event) {
     view_width = paper.view.size.width
