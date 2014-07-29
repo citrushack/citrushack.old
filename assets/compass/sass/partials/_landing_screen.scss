@@ -12,33 +12,48 @@ $landing-overlay-deg: 135deg;
   margin: 0;
   
   @include background-size(cover);
-  background-image: linear-gradient(
-                      $landing-overlay-deg,
-                      rgba($landing-overlay-color-1, $landing-overlay-opacity),
-                      rgba(#000000, $landing-overlay-opacity),
-                      rgba($landing-overlay-color-2, $landing-overlay-opacity)),
-                    image-url('ucr-campus.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  //background-image: linear-gradient(
+  //                    $landing-overlay-deg,
+  //                    rgba($landing-overlay-color-1, $landing-overlay-opacity),
+  //                    rgba(#000000, $landing-overlay-opacity),
+  //                    rgba($landing-overlay-color-2, $landing-overlay-opacity)),
+  //                  image-url('ucr-campus.jpg');
+  //background-repeat: no-repeat;
+  //background-attachment: fixed;
+  //background-position: center;
 
+  //background-color: rgba($bloodorange-red, 0.9);
   /* prevent content from dragging background around */
   overflow: hidden;
  
   #landing-content {
     @include center-content();
 
-    button {
-      background-color: rgba(#000000,0);
+    h1 {
       color: white;
+      font-weight: 100;
+      font-size: 10em;
+    }
+    img {
+      margin-left: auto;
+      margin-right: auto;
     }
   }
+}
 
-  #landing-text {
-    color: white;
+#logo-bg {
+  @include set-size(100%,100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
-    strong {
-      color: $bloodorange-red;
-    }
-  }
+#overlay-bg {
+  @include set-size(100%,100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: rgba($bloodorange-red, 0.90);
 }

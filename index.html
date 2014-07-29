@@ -16,8 +16,7 @@
   <link rel='stylesheet' type='text/css' href='assets/css/vendors/monokai_sublime.css'>
   <!-- our minified main stylesheet -->
   <link rel='stylesheet' type='text/css' href='assets/css/citrushack.css'>
-  <!-- google font -->
-  <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,900,700' rel='stylesheet' type='text/css'>  <!-- google font -->
   <!-- end stylesheets -->
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -27,9 +26,9 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
   <![endif]-->
 </head>
-<body data-spy='scroll' data-target='nav' data-offset='0'>
+<body data-offset='0'>
   <!-- start navigation -->
-  <nav class='navbar navbar-default navbar-fixed-bottom' role='navigation'>
+  <nav class='navbar navbar-default navbar-fixed-top' role='navigation' style='display:none'>
     <div class='container'>
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -41,7 +40,7 @@
         </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#landing">Home</a></li>
+          <li><a href="#landing">Home</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#sponsors">Sponsors</a></li>
         </ul>
@@ -51,20 +50,14 @@
   <!-- end navigation -->
 
   <!-- start landing screen -->
+  <!-- background elements -->
+  <canvas id='logo-bg' resize></canvas>
+  <div id='overlay-bg'></div>
   <div class='container-fluid' id='landing'>
     <div id='landing-content'>
-      <img src='assets/img/logo.png' class='img-responsive'></img>
+      <img src='assets/img/logo.png'></img>
       <div class='row'>
         <div class='col-md-12 text-center'>
-          <h1 class='hidden-sm hidden-xs' id='landing-text'>
-            Inland Empire's <strong>biggest hackathon</strong>
-          </h1>
-        </div>
-        <div class='col-md-6'>
-          <button class='btn btn-block btn-default'>Register</button>
-        </div>
-        <div class='col-md-6'>
-          <button class='btn btn-block btn-default'>Information</button>
         </div>
       </div>
     </div>
@@ -72,11 +65,7 @@
   <!-- end landing screen -->
 
   <!-- start hosted by -->
-  <!--
-  <div class='container-fluid' id='hosted-by'>
-    <img src='assets/img/acmlogoucr.png' class='img-responsive'></img>
-  </div>
-  -->
+
   <!-- end hosted by -->
 
   <!-- start faq -->
@@ -194,6 +183,7 @@
   <!-- vendors -->
   <script src='assets/js/vendors/jquery-1.11.1.js'></script>
   <script src='assets/js/vendors/jquery.slides.min.js'></script> 
+  <script src='assets/js/vendors/paper-full.min.js'></script>
   <script src='assets/js/vendors/bootstrap.min.js'></script>
   <script src='assets/js/vendors/highlight.pack.js'></script>
   <script src='assets/js/vendors/typed.js'></script>
