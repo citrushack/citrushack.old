@@ -13,12 +13,15 @@ body {
   position: relative;
 }
 
-h2, h3, p {
+h3, p {
   font-family: sans-serif;
 }
 
-h1 {
+h1, h2 {
   font-family: 'Roboto', sans-serif;
+}
+
+h1 {
   font-weight: 100;
   font-size: 4em;
   letter-spacing: 0.0325em;
