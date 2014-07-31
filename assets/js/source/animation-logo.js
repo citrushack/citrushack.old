@@ -105,7 +105,7 @@ $(document).ready(function(){
    * @event {Event} <- this is provided by paper.js
    */
   function onResize (event) {
-    view_width = paper.view.size.width
+    view_width = paper.view.size.width;
     view_height = paper.view.size.height;
 
     console.log(view_width);
