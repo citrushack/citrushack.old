@@ -13,16 +13,20 @@ body {
   position: relative;
 }
 
-h3, p {
+p {
   font-family: sans-serif;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
+  font-weight: 100;
 }
 
 h1 {
-  font-weight: 100;
   font-size: 4em;
   letter-spacing: 0.0325em;
+}
+
+#blah {
+  background-color: rgba(#1464CC,0.8);
 }
