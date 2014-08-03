@@ -10,6 +10,7 @@ $landing-overlay-deg: 135deg;
   background: linear-gradient(
                       rgba($ucr-gold, 0.9),
                       rgba($ucr-blue, 0.9));
+
   padding: 0;
   margin: 0;
   position: relative; 
@@ -23,6 +24,19 @@ $landing-overlay-deg: 135deg;
       font-weight: 100;
       font-size: 10em;
     }
+
+    h2 {
+      padding: 0;
+      margin: 0;
+      color: $ucr-cream;
+    }
+
+    h3 {
+      padding-top: 5px;
+      margin: 0;
+      color: $orange-lvl1;
+    }
+
     img {
       margin-left: auto;
       margin-right: auto;
@@ -36,4 +50,22 @@ $landing-overlay-deg: 135deg;
   top: 0;
   left: 0;
   z-index: -3;
+}
+
+.landing-btn {
+  border-radius: 0;
+  border-width: 0;
+  background-color: lighten($ucr-orange,25%);
+  color: white;
+  width: 100%;
+  margin-top: 10px;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    background-color: lighten($ucr-orange,10%);
+    color: white;
+  }
+
 }

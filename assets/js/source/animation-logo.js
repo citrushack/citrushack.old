@@ -11,8 +11,8 @@ $(document).ready(function(){
     , view_height = paper.view.size.height;
 
   /* Block sizes and spacing settings */ 
-  var block_width = 200
-    , block_height = 200
+  var block_width = 40
+    , block_height = 40
     , block_size = new paper.Size(block_width,block_height)
     , spacing = 7;
 
