@@ -5,6 +5,7 @@
 
 html {
   @include set-size(100%,100%);
+  padding-top: $nav-height;
 }
 
 body {
@@ -25,8 +26,4 @@ h1, h2, h3 {
 h1 {
   font-size: 4em;
   letter-spacing: 0.0325em;
-}
-
-#blah {
-  background-color: rgba(#1464CC,0.8);
 }

@@ -26,9 +26,9 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
   <![endif]-->
 </head>
-<body data-offset='0'>
+<body>
   <!-- start navigation -->
-  <nav class='navbar navbar-default navbar-fixed-top' role='navigation' style='display:none'>
+  <nav class='navbar navbar-default navbar-fixed-top' role='navigation'>
     <div class='container'>
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -41,8 +41,10 @@
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li><a href="#landing">Home</a></li>
+          <li><a href="#intro">Intro</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#sponsors">Sponsors</a></li>
+          <li><a href="#judges">Judges</a></li>
         </ul>
       </div><!--/.nav-collapse --> 
     </div>
@@ -67,12 +69,12 @@
         </div>
       </div>
       <div class='row' style='padding-top:3em;'>
-        <div class='col-md-3 col-md-offset-3' style=''>
+        <div class='col-md-3 col-md-offset-3 col-sm-6 col-xs-6' style=''>
           <button class='btn btn-lg btn-default landing-btn'>
             Register
           </button>
         </div>
-        <div class='col-md-3' style=''>
+        <div class='col-md-3 col-sm-6 col-xs-6' style=''>
           <button class='btn btn-lg btn-default landing-btn'>
             Information Packet
           </button>
@@ -81,7 +83,44 @@
     </div>
   </div>
   <!-- end landing screen -->
- 
+
+  <!-- start intro -->
+  <div id='intro'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-6 intro-element'>
+          <h1>You have an idea</h1>
+          <h2>...but need some help.</h2>
+          <img src='assets/img/thinking-guy.png' class='img-responsive'></img>
+        </div>
+        <div class='col-md-6 intro-element'>
+          <h1>Assemble a team</h1>
+          <h2>...make friends with different skills.</h2>
+          <img src='assets/img/team.png' class='img-responsive'></img>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-md-6 intro-element'>
+          <h1>Form a plan</h1>
+          <h2>...assess and utilize everyone's skills
+          <img src='assets/img/notepad.png' class='img-responsive'></img>
+        </div>
+        <div class='col-md-6 intro-element'>
+          <h1>HACK!!</h1>
+          <h2>...remember, MVP (minimum viable product)</h2>
+          <img src='assets/img/working.png' class='img-responsive'></img>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-md-6 intro-element'>
+          <h1>Don't forget to eat</h1>
+          <h2>...we won't starve you ;)
+          <img src='assets/img/food.png' class='img-responsive'></img>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end intro -->
   <!-- start faq -->
   <div id='faq' >
     <div class='container'>
@@ -90,7 +129,7 @@
       <br>
       <div class='row'>
         <div class='col-md-4 col-sm-6'>
-          <div class='faq-item panel panel-primary'>
+          <div class='faq-item panel panel-default'>
             <div class='panel-heading'>
               <h3>What is a hackathon?</h3>
             </div>
@@ -100,7 +139,7 @@
           </div>
         </div>
         <div class='col-md-4 col-sm-6'>
-          <div class='faq-item panel panel-primary'>
+          <div class='faq-item panel panel-default'>
             <div class='panel-heading'>
               <h3>What should I create?</h3>
             </div>
@@ -110,7 +149,7 @@
           </div> 
         </div>
         <div class='col-md-4 col-sm-6'>
-          <div class='faq-item panel panel-primary'>  
+          <div class='faq-item panel panel-default'>  
             <div class='panel-heading'>
               <h3>Who can come?</h3>
             </div>
@@ -120,7 +159,7 @@
           </div>
         </div>
         <div class='col-md-4 col-sm-6'>
-          <div class='faq-item panel panel-primary'>
+          <div class='faq-item panel panel-default'>
             <div class='panel-heading'>
               <h3>Do I need to have a team?</h3>
             </div>
@@ -130,7 +169,7 @@
           </div>
         </div>
         <div class='col-md-4 col-sm-6'>
-          <div class='faq-item panel panel-primary'>
+          <div class='faq-item panel panel-default'>
             <div class='panel-heading'>
               <h3>How are hacks presented?</h3>
             </div>
@@ -140,7 +179,7 @@
           </div>
         </div>
         <div class='col-md-4 col-sm-6'>
-          <div class='faq-item panel panel-primary'>
+          <div class='faq-item panel panel-default'>
             <div class='panel-heading'>
               <h3>Any other rules?</h3>
             </div>
@@ -162,23 +201,17 @@
       <div class='row'>
         <div class='col-md-12 sponsor-col'>
           <a>
-            <img class='sponsor-lg img-responsive' src='assets/img/sendgrid-orange.png' 
-                 onmouseover='this.src="assets/img/sendgrid.png"' 
-                 onmouseout='this.src="assets/img/sendgrid-orange.png"'></img>
+            <img class='sponsor-lg img-responsive' src="assets/img/sendgrid.png"></img>
           </a>
         </div> 
         <div class='col-md-6 col-sm-6 sponsor-col'>
           <a>
-            <img class='sponsor-md img-responsive' src='assets/img/riversideio-logo-orange.png'
-                 onmouseover='this.src="assets/img/riversideio-logo.png"'
-                 onmouseout='this.src="assets/img/riversideio-logo-orange.png"'></img>
+            <img class='sponsor-md img-responsive' src="assets/img/riversideio-logo.png"></img>
           </a>
         </div>
         <div class='col-md-6 col-sm-6 sponsor-col'>
           <a>
-            <img class='sponsor-md img-responsive' src='assets/img/cse_logo-orange.png'
-                 onmouseover='this.src="assets/img/cse_logo.png"'
-                 onmouseout='this.src="assets/img/cse_logo-orange.png"'></img>
+            <img class='sponsor-md img-responsive' src="assets/img/cse_logo.png"></img>
           </a>
         </div>
       </div>
@@ -187,6 +220,12 @@
   <!-- end sponsors -->
 
   <!-- start Judges -->
+  <div id='judges'>
+    <div class='container'>
+      <h1>Judges</h1>
+      <h2>Finding awesome people now. Stay tuned.
+    </div>
+  </div>
   <!-- end Judges -->
 
   <!-- dummy block, so nav doesnt cover content -->

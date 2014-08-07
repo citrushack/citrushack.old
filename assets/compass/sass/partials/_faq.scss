@@ -1,22 +1,23 @@
 $faq-item-bottom-margin: 20px;
-$faq-item-color: $blue-lvl1;
+$faq-item-color: #1464CC;
 $faq-bg: $ghost-gray;
 
 #faq {
-  background-color: $faq-bg;
-  min-height: 100%;
+  background: linear-gradient(
+                      rgba($ucr-purple, 0.9),
+                      rgba($ucr-orange, 0.9));
 
   h1 {
-    color: $faq-item-color;
+    color: white;
   }
 }
 
 .faq-item.panel-primary {
-  border-color: $faq-item-color;
+  border-color: white;
 }
 
 .faq-item .panel-heading {
-  background-color: $faq-item-color !important;
+  background-color: white !important;
 }
 
 .faq-item {

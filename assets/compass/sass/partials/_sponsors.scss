@@ -6,10 +6,12 @@ $sponsor-bg: white;
 
 #sponsors {
   padding-bottom: $sponsors-padding-bottom;
-  background-color: $sponsor-bg;
+  background: linear-gradient(
+                      rgba($ucr-orange, 0.9),
+                      rgba($bloodorange-red, 0.9));
 
   .container h1 {
-    color: $orange-lvl3;
+    color: white;
   }
 }
 
@@ -19,14 +21,27 @@ $sponsor-bg: white;
 }
 
 .sponsor-lg {
+  @include transition(opacity 1s);
   max-height: $sponsor-lg-height;
   display: inline-block;
+  opacity: .5;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
+
 .sponsor-md {
+  @include transition(opacity 1s);
   height: $sponsor-md-height;
   display: inline-block;
   padding-top: $sponsor-md-padding;
   padding-bottom: $sponsor-md-padding;
+  opacity: .5;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 

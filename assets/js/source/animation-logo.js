@@ -108,9 +108,6 @@ $(document).ready(function(){
     view_width = paper.view.size.width;
     view_height = paper.view.size.height;
 
-    console.log(view_width);
-    console.log(view_height);
-
     block_matrix = [];
     createMatrix();
     paper.view.draw();
