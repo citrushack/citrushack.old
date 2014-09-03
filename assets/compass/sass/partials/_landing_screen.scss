@@ -1,71 +1,108 @@
 /* landing section */
 
-$landing-overlay-color-1: darken($orange-lvl3,20%);
-$landing-overlay-color-2: darken($blue-lvl2,20%);
-$landing-overlay-opacity: 0.6;
-$landing-overlay-deg: 135deg;
+#logo {
+
+  max-width: 300px;
+  max-height: 30%;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:hover {
+    @include transition-property(transform);
+    @include transition-duration(1s);
+    @include transform(scale(.8) skew(10deg));
+  }
+
+}
+
+#name {
+  max-width: 300px;
+  max-height: 30%;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#arrow-down {
+  @include translate(-50%,0);
+  @include transition-property(opacity);
+  @include transition-duration(1s);
+  opacity: .6;
+  display: block;
+  left: 50%;
+  position: absolute;
+  bottom: 0px;
+
+  &:hover {
+    opacity: .9;
+  }
+}
 
 #landing {
   @include set-size(100%,100%); 
+
   background: linear-gradient(
-                      rgba($ucr-gold, 0.9),
-                      rgba($ucr-blue, 0.9));
+                rgba(#000000,.5)
+              , rgba(#000000,.5)
+              )
+            , image-url('treeee.jpg');
+
+  background-position: center center;
+  @include background-size(cover);
+
+  position: relative;
+  z-index: 1;
 
   padding: 0;
   margin: 0;
-  position: relative; 
   overflow: hidden;
- 
-  #landing-content {
-    @include center-content();
 
-    h1 {
-      color: white;
-      font-weight: 100;
-      font-size: 10em;
-    }
+  .container {
+    padding-top: 40px;
+    padding-bottom: 20px;
 
-    h2 {
-      padding: 0;
-      margin: 0;
-      color: $ucr-cream;
-    }
+    #content {
+      
+      padding-top: 20px;
 
-    h3 {
-      padding-top: 5px;
-      margin: 0;
-      color: $orange-lvl1;
-    }
+      #catchphrase {
+        text-align: center;
+        color: white;
+      }
 
-    img {
-      margin-left: auto;
-      margin-right: auto;
+      #date {
+        text-align: center;
+        color: white;
+      }
+
+      #button-group {
+        margin-top: 70px;
+
+        button {
+          display: block;
+          background-color: lighten($bloodorange-red, 5%);
+          border-color: lighten($bloodorange-red,5%);
+          border-radius: 5px;
+          border-style: none;
+          color: white;
+          margin-left:auto;
+          margin-right:auto;
+          margin-top:20px;
+          padding: 7px 80px 7px 80px;
+
+          &:focus {
+            @include box-shadow (0px 0px 3pt 2pt $bloodorange-red);
+            outline: none;
+          }
+
+          &:hover {
+            background-color: darken($bloodorange-red, 5%);
+          }
+        }
+      }
     }
   }
-}
-
-#logo-bg {
-  @include set-size(100%,100%);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -3;
-}
-
-.landing-btn {
-  border-radius: 0;
-  border-width: 0;
-  background-color: lighten($ucr-orange,25%);
-  color: white;
-  width: 100%;
-  margin-top: 10px;
-
-  &:hover,
-  &:focus,
-  &:active,
-  &.active {
-    background-color: lighten($ucr-orange,10%);
-    color: white;
-  }
-
 }

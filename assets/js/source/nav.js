@@ -3,8 +3,9 @@ $(document).ready(function(){
   var $window = $(window);
   var $nav = $('nav');
 
+  /* make nav transparent when scrolling down */
   $(document).scroll(function(){
-    if ($(window).scrollTop() >= 100)
+    if ($window.scrollTop() >= 100)
       $nav.addClass('transparent');
     else
       if ($nav.hasClass('transparent'))

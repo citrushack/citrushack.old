@@ -1,0 +1,30 @@
+#footer {
+  width: 100%;
+  background-color: #292429;
+  color: white;
+  position: fixed;
+  bottom: 0; 
+  left: 0;
+  height: 300px;
+  text-align: center;
+
+
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    max-width: 300px;
+  }
+
+  #heart {
+    color: #F7208B;
+    font-size: 20px;
+    margin:0; padding:0;
+  }
+
+  #made-by {
+    color: #524F52;
+    position: absolute;
+    bottom: 0; 
+  }
+}

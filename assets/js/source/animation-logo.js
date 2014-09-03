@@ -11,14 +11,14 @@ $(document).ready(function(){
     , view_height = paper.view.size.height;
 
   /* Block sizes and spacing settings */ 
-  var block_width = 40
-    , block_height = 40
+  var block_width = 20
+    , block_height = 20
     , block_size = new paper.Size(block_width,block_height)
     , spacing = 7;
 
   /* Throttle the speed of the animation
      1 is default speed, 2 is 1/2 the speed, etc */
-  var animation_speed = 20;
+  var animation_speed = 5;
 
   /* Colors to use for blocks. */
   var block_colors = [

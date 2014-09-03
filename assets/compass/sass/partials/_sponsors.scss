@@ -5,13 +5,13 @@ $sponsor-md-padding: 15px;
 $sponsor-bg: white;
 
 #sponsors {
+  background-color: white;
+  padding-top: 40px;
+  position: relative;
+  z-index: 1;
   padding-bottom: $sponsors-padding-bottom;
-  background: linear-gradient(
-                      rgba($ucr-orange, 0.9),
-                      rgba($bloodorange-red, 0.9));
-
   .container h1 {
-    color: white;
+    color: black;
   }
 }
 

@@ -1,27 +1,29 @@
 #intro {
-  @include set-size(100%, auto);
-  background: linear-gradient(
-                      rgba($ucr-blue, 0.9),
-                      rgba($ucr-purple, 0.9));
   padding-top: 40px;
   padding-bottom: 40px;
+  background-color: #BB2D1D;
+  position: relative;
+  z-index: 1;
+  #heading {
+    text-align: center;
+    h1 {
+      font-weight: 700;
+      color: white; 
+    }
 
-  h1, h2 {
-    color: white;
-
-    strong {
-      color: $ucr-gold;
+    h4 {
+      color: white;
+      font-weight: 700;
     }
   }
-  img {
-    margin-left: auto;
-    margin-right: auto;
-  }
 
-  .intro-element {
-    padding-top: 20px;
-    img {
-      padding-top: 40px;
+  #content {
+    text-align: center;
+    margin-top: 40px;
+
+    h3, h2 {
+      color: white;
+      font-weight: 100;
     }
   }
 }

@@ -16,7 +16,7 @@
   <link rel='stylesheet' type='text/css' href='assets/css/vendors/monokai_sublime.css'>
   <!-- our minified main stylesheet -->
   <link rel='stylesheet' type='text/css' href='assets/css/citrushack.css'>
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,900,700' rel='stylesheet' type='text/css'>  <!-- google font -->
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,900,700' rel='stylesheet' type='text/css'>  <!-- google font -->
   <!-- end stylesheets -->
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -27,8 +27,21 @@
   <![endif]-->
 </head>
 <body>
+
+  <!-- facebook stuff -->
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script> <!-- end facebook stuff -->
+
   <!-- start navigation -->
-  <nav class='navbar navbar-default navbar-fixed-top' role='navigation'>
+  <nav class='navbar navbar-default navbar-fixed-top' role='navigation' style='display:none'>
     <div class='container'>
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -48,79 +61,64 @@
         </ul>
       </div><!--/.nav-collapse --> 
     </div>
-  </nav>
-  <!-- end navigation -->
+  </nav><!-- end navigation -->
+
+  <!-- social media like things -->
+  <div class="fb-like" style='position:fixed;z-index:9999;top:10px;right:10px'data-href="https://www.facebook.com/pages/Citrus-Hack/462848240518806?ref=br_tf" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div><!-- end social media like things -->
 
   <!-- start landing screen -->
-  <div id='landing'>
-  <canvas id='logo-bg' resize></canvas>
-    <div id='landing-content' class='container-fluid'>
-      <div class='row'>
-        <div class='col-md-12'>
-          <img class='img-responsive' src='assets/img/logo.png'></img>
+  <div id='landing'> 
+    <div class='container' >
+      <!-- big arrow on landing --> 
+      <img id='arrow-down' src='assets/img/arrow-down.png'></img>
+      <!-- just the orange -->
+      <img class='img-responsive' id='logo' src='assets/img/logo.png'></img>
+      <!-- just the hackathon name -->
+      <img class='img-responsive' id='name' src='assets/img/name.png'></img>
+      <!-- start landing content -->
+      <div id='content'>
+        <h4 id='catchphrase'>Inland Empire's <u>Premier</u> Hackathon</h4>
+        <h5 id='date'>April 17 - 19 <span style='color:#EE3925'>@</span> Riverside City Hall</h5>
+        <div id='button-group'>
+          <button>Register Now</button>
+          <button>Information Packet</button>
         </div>
-        <div class='col-md-12 text-center'>
-          <h2>
-            <em>"Harvest your creativity, Build to inspire"</em>
-          </h2>
-          <h3>
-            Spring 2015
-          </h3>
-        </div>
-      </div>
-      <div class='row' style='padding-top:3em;'>
-        <div class='col-md-3 col-md-offset-3 col-sm-6 col-xs-6' style=''>
-          <button class='btn btn-lg btn-default landing-btn'>
-            Register
-          </button>
-        </div>
-        <div class='col-md-3 col-sm-6 col-xs-6' style=''>
-          <button class='btn btn-lg btn-default landing-btn'>
-            Information Packet
-          </button>
-        </div>
-      </div>
+      </div><!-- end landing content -->
     </div>
-  </div>
-  <!-- end landing screen -->
+  </div><!-- end landing screen -->
 
-  <!-- start intro -->
-  <div id='intro'>
+  <!-- start introduction -->
+  <div id='intro'> 
     <div class='container'>
-      <div class='row'>
-        <div class='col-md-6 intro-element'>
-          <h1>You have an idea</h1>
-          <h2>...but need some help.</h2>
-          <img src='assets/img/thinking-guy.png' class='img-responsive'></img>
-        </div>
-        <div class='col-md-6 intro-element'>
-          <h1>Assemble a team</h1>
-          <h2>...make friends with different skills.</h2>
-          <img src='assets/img/team.png' class='img-responsive'></img>
-        </div>
-      </div>
-      <div class='row'>
-        <div class='col-md-6 intro-element'>
-          <h1>Form a plan</h1>
-          <h2>...assess and utilize everyone's skills
-          <img src='assets/img/notepad.png' class='img-responsive'></img>
-        </div>
-        <div class='col-md-6 intro-element'>
-          <h1>HACK!!</h1>
-          <h2>...remember, MVP (minimum viable product)</h2>
-          <img src='assets/img/working.png' class='img-responsive'></img>
-        </div>
-      </div>
-      <div class='row'>
-        <div class='col-md-6 intro-element'>
-          <h1>Don't forget to eat</h1>
-          <h2>...we won't starve you ;)
-          <img src='assets/img/food.png' class='img-responsive'></img>
-        </div>
+      <!-- start intro header -->
+      <div id='heading'>
+        <h1>Prepare yourself </h1> 
+        <h4>This is the best thing since sliced oranges <img src='assets/img/orange.svg' style='width:50px;height:55px;display:inline'></img></h4>
+      </div><!-- end intro header -->
+      <!-- start intro content -->
+      <div id='content'>
+        <h3><strong>Citrus Hack</strong> is the Inland Empire's <strong>premier</strong> hackathon. We aim to attract around <strong>300</strong> of the West Coast's <strong>best</strong> and <strong>brightest</strong>, to compete in a <strong>36 hour showdown</strong> at the <strong>heart</strong> of the <strong>beautiful</strong> city of <strong>Riverside</strong></h3> 
+        <br>
+        <br>
+        <h3>HELP US MAKE HISTORY</h3>
+        <h2><strong>April 17th - 19th <span style='color:black'>|</span> Riverside City Hall</strong></h2>
+      </div><!-- end intro content -->
+    </div>
+  </div> 
+
+
+  <!-- start trailer -->
+  <div id='trailer'>
+    <div class='container'>
+      <h1>Trailer</h1>
+      <h2>&nbsp&nbsp&nbsp&nbsp<em>Coming Soon</em></h2>
+      <br>
+      <div id='content'>
+        <img class='img-responsive' id='holder' src='assets/img/trailer-holder.png'></img>
       </div>
     </div>
   </div>
-  <!-- end intro -->
+
   <!-- start faq -->
   <div id='faq' >
     <div class='container'>
@@ -197,24 +195,7 @@
   <div id='sponsors'>
     <div class='container'>
       <h1>Sponsors</h1>
-      <br>
-      <div class='row'>
-        <div class='col-md-12 sponsor-col'>
-          <a>
-            <img class='sponsor-lg img-responsive' src="assets/img/sendgrid.png"></img>
-          </a>
-        </div> 
-        <div class='col-md-6 col-sm-6 sponsor-col'>
-          <a>
-            <img class='sponsor-md img-responsive' src="assets/img/riversideio-logo.png"></img>
-          </a>
-        </div>
-        <div class='col-md-6 col-sm-6 sponsor-col'>
-          <a>
-            <img class='sponsor-md img-responsive' src="assets/img/cse_logo.png"></img>
-          </a>
-        </div>
-      </div>
+      <h2>&nbsp&nbsp&nbsp&nbsp<em>We need sponsors!</em></h2>
     </div>
   </div>
   <!-- end sponsors -->
@@ -223,11 +204,44 @@
   <div id='judges'>
     <div class='container'>
       <h1>Judges</h1>
-      <h2>Finding awesome people now. Stay tuned.
+      <h2>&nbsp&nbsp&nbsp&nbsp<em>Finding awesome people now. Stay tuned.</em></h2>
     </div>
   </div>
   <!-- end Judges -->
 
+  <!-- start past projects -->
+  <div id='past-projects'>
+    <div class='container'>
+      <h1>Need some inspiration?</h1>
+      <h2>&nbsp&nbsp&nbsp&nbsp<em>Here are some works in progress...</em></h2>
+      <div class='container' id='project-frame'>
+        <a href='http://frozen-meadow-4020.herokuapp.com/#/landing' target='_blank'>
+          <img class='img-responsive' src='assets/img/dockit.png'></img>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- end past projects -->
+
+  <!-- start footer -->
+  <!-- needed to fix footer in Safari -->
+  <div style='width:100%; height:1px; z-index: -1; background-color:#292429'></div>
+  <div id='footer'>
+    <div class='container'>
+      <!--
+      <h4 style='display:inline-block'>Designed by ACM@UCR</h4>
+      <a href='https://www.facebook.com/pages/Citrus-Hack/462848240518806?ref=br_tf'>
+        
+      </a> -->
+
+      <h2>Presented by</h2>
+      <img class='img-responsive' src='assets/img/acmlogoucr.png'></img>
+
+      <h4 id='made-by'>Made with <span id='heart'>♥</span> by Manuel Sanchez</h4>
+    </div>
+  </div>
+  <!-- end footer -->
+  
   <!-- dummy block, so nav doesnt cover content -->
  
   <!-- dummy dumb done -->
@@ -242,7 +256,6 @@
   <script src='assets/js/vendors/typed.js'></script>
   <!-- our minified compiled script -->
   <script src='assets/js/citrushack.js'></script>
-   
   <!-- Need to enable highlight.js syntax highlighting -->
   <script>
     hljs.initHighlightingOnLoad();

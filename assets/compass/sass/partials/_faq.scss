@@ -3,24 +3,27 @@ $faq-item-color: #1464CC;
 $faq-bg: $ghost-gray;
 
 #faq {
-  background: linear-gradient(
-                      rgba($ucr-purple, 0.9),
-                      rgba($ucr-orange, 0.9));
-
+  padding-bottom: 40px;
+  padding-top: 20px;
+  background-color: $ghost-gray;
+  position: relative;
+  z-index: 1;
   h1 {
-    color: white;
+    color: black;
   }
 }
 
 .faq-item.panel-primary {
-  border-color: white;
+  border-color: $bloodorange-red;
 }
 
 .faq-item .panel-heading {
-  background-color: white !important;
+  background-color: $bloodorange-red !important;
+  color: white;
 }
 
 .faq-item {
+  border-color: $bloodorange-red;
   margin-bottom: $faq-item-bottom-margin;
   text-align: center;
 }
