@@ -11,21 +11,10 @@
 }
 
 /**
-  * centers content 
+  * centers content horizontally 
   */
-@mixin center-content () {
-  @include translate(-50%,-50%);
-  position: relative;
-  top: 50%;
-  left: 50%;
-}
-
-/**
- * Sets css transition 
-   @property {Name} of the CSS attribute 
-   @duration {S} time in seconds
- */
-@mixin set-transition ($property, $duration) {
-  @include transition-property($property);
-  @include transition-duration($duration);
+@mixin horizontal-center () {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

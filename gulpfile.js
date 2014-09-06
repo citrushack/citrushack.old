@@ -21,11 +21,9 @@ var paths = {
        concatenated. */
     scripts : [
       './assets/js/source/global.js'
-    , './assets/js/source/nav.js'
     , './assets/js/source/landing_screen.js'
     , './assets/js/source/faq.js'
     , './assets/js/source/sponsors.js'
-    , './assets/js/source/animation-logo.js'
     ]
     /* name of our final minified, combined script */
   , main_script : 'citrushack.js'
@@ -65,7 +63,7 @@ gulp.task('scripts', function(){
     .pipe(jshint({"laxcomma" : true}))
     .pipe(jshint.reporter(stylish))   //use default logger
     .pipe(concat(main_script))        //concatenate the scripts    
- //   .pipe(uglify())                   //minify the resulting script
+    .pipe(uglify())                   //minify the resulting script
     .pipe(gulp.dest(dest));           //save script
 });
 

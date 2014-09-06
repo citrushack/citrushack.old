@@ -1,9 +1,3 @@
-/* width of entire content */
-$page-content-width: 1080px;
-
-/* width of navbar */
-$nav-height: 50px; 
-
 /* colors */
 $light_orange: #FFBD59;
 $flesh-pink: #F2B46D;
@@ -14,19 +8,8 @@ $granite-black: #002222;
 $bloodorange-red: #EE3925;
 $ghost-gray: #F8F8F8;
 $subtle-white: #FEFFF1;
-
-/* citrus-orange complement colors */
-$blue-lvl2: #267FE5;
-$blue-lvl1: #4099FF;
-$orange-lvl3: #ED9837;
-$orange-lvl2: #FCA746;
-$orange-lvl1: #FFB756;
-
-/* bloodorange red tones */
-$bloodorange-red-lvl1: darken($bloodorange-red, 15%);
-$bloodorange-red-lvl2: darken($bloodorange-red, 10%);
-$bloodorange-red-lvl3: lighten($bloodorange-red, 10%);
-$bloodorange-red-lvl4: lighten($bloodorange-red, 15%);
+$scarlet-red: #BB2D1D;
+$dark-red: #6E1A11;
 
 /* UC Riverside colors */
 $ucr-blue: #2D6CC0;

@@ -1,26 +1,31 @@
+$intro-top: 40px;
+$intro-bottom: 40px;
+$intro-bg: $scarlet-red;
+
+$intro-content-top: 40px;
+
+$orange-slice-height: 55px;
+$orange-slice-width: 50px;
+
 #intro {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #BB2D1D;
-  position: relative;
-  z-index: 1;
+  padding-top: $intro-top;
+  padding-bottom: $intro-top;
+  background-color: $intro-bg;
+  #orange-slice {
+    width: $orange-slice-width;
+    height: $orange-slice-height;
+    display:inline;
+  }
   #heading {
     text-align: center;
-    h1 {
+    h1, h4 {
       font-weight: 700;
       color: white; 
     }
-
-    h4 {
-      color: white;
-      font-weight: 700;
-    }
   }
-
   #content {
     text-align: center;
-    margin-top: 40px;
-
+    padding-top: $intro-content-top;
     h3, h2 {
       color: white;
       font-weight: 100;

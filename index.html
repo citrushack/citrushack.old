@@ -33,7 +33,6 @@
   <![endif]-->
 </head>
 <body>
-
   <!-- facebook stuff -->
   <div id="fb-root"></div>
   <script>
@@ -45,33 +44,10 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   </script> <!-- end facebook stuff -->
-
-  <!-- start navigation -->
-  <nav class='navbar navbar-default navbar-fixed-top' role='navigation' style='display:none'>
-    <div class='container'>
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="#landing">Home</a></li>
-          <li><a href="#intro">Intro</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#sponsors">Sponsors</a></li>
-          <li><a href="#judges">Judges</a></li>
-        </ul>
-      </div><!--/.nav-collapse --> 
-    </div>
-  </nav><!-- end navigation -->
-
+  
   <!-- social media like things -->
   <div class="fb-like" style='position:fixed;z-index:9999;top:10px;right:10px'data-href="https://www.facebook.com/pages/Citrus-Hack/462848240518806?ref=br_tf" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div><!-- end social media like things -->
-
+  
   <!-- start landing screen -->
   <div id='landing'> 
     <div class='container' >
@@ -92,169 +68,146 @@
       </div><!-- end landing content -->
     </div>
   </div><!-- end landing screen -->
-
-  <!-- start introduction -->
-  <div id='intro'> 
-    <div class='container'>
-      <!-- start intro header -->
-      <div id='heading'>
-        <h1>Prepare yourself </h1> 
-        <h4>This is the best thing since sliced oranges <img src='assets/img/orange.svg' style='width:50px;height:55px;display:inline'></img></h4>
-      </div><!-- end intro header -->
-      <!-- start intro content -->
-      <div id='content'>
-        <h3><strong>Citrus Hack</strong> is the Inland Empire's <strong>premier</strong> hackathon. We aim to attract around <strong>300</strong> of the West Coast's <strong>best</strong> and <strong>brightest</strong>, to compete in a <strong>36 hour showdown</strong> at the <strong>heart</strong> of the <strong>beautiful</strong> city of <strong>Riverside</strong></h3> 
+  <!-- wrapper for main page content -->
+  <div id='wrapper'>
+    <!-- start introduction -->
+    <div id='intro'> 
+      <div class='container'>
+        <!-- start intro header -->
+        <div id='heading'>
+          <h1>Prepare yourself </h1> 
+          <h4>This is the best thing since sliced oranges <img id='orange-slice' src='assets/img/orange.svg'></img></h4>
+        </div><!-- end intro header -->
+        <!-- start intro content -->
+        <div id='content'>
+          <h3><strong>Citrus Hack</strong> is the Inland Empire's <strong>premier</strong> hackathon. We aim to attract around <strong>300</strong> of the West Coast's <strong>best</strong> and <strong>brightest</strong>, to compete in a <strong>36 hour showdown</strong> at the <strong>heart</strong> of the <strong>beautiful</strong> city of <strong>Riverside</strong></h3> 
+          <br>
+          <br>
+          <h3>HELP US MAKE HISTORY</h3>
+          <h2><strong>April 17th - 19th <span style='color:black'>|</span> Riverside City Hall</strong></h2>
+        </div><!-- end intro content -->
+      </div>
+    </div> 
+    <!-- start trailer -->
+    <div id='trailer'>
+      <div class='container'>
+        <h1>Trailer</h1>
+        <h2>&nbsp&nbsp&nbsp&nbsp<em>Coming Soon</em></h2>
+        <br>
+        <div id='content'>
+          <img class='img-responsive' id='holder' src='assets/img/trailer.jpg'></img>
+        </div>
+      </div>
+    </div><!-- end trailer -->
+    <!-- start faq -->
+    <div id='faq' >
+      <div class='container'>
+        <h1>Faq</h1>
         <br>
         <br>
-        <h3>HELP US MAKE HISTORY</h3>
-        <h2><strong>April 17th - 19th <span style='color:black'>|</span> Riverside City Hall</strong></h2>
-      </div><!-- end intro content -->
-    </div>
-  </div> 
-
-
-  <!-- start trailer -->
-  <div id='trailer'>
-    <div class='container'>
-      <h1>Trailer</h1>
-      <h2>&nbsp&nbsp&nbsp&nbsp<em>Coming Soon</em></h2>
-      <br>
-      <div id='content'>
-        <img class='img-responsive' id='holder' src='assets/img/trailer.jpg'></img>
+        <div class='row'>
+          <div class='col-md-4 col-sm-6'>
+            <div class='faq-item panel panel-default'>
+              <div class='panel-heading'>
+                <h3>What is a hackathon?</h3>
+              </div>
+              <div class='panel-body'>
+                <p>A hackathon is a place where the only thing limiting what you build is your own creativity. Stay up for 36 hours with the smartest people you'll ever meet, building the coolest things you have created and chugging more Red Bull than you ever thought possible.</p>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-4 col-sm-6'>
+            <div class='faq-item panel panel-default'>
+              <div class='panel-heading'>
+                <h3>What should I create?</h3>
+              </div>
+              <div class='panel-body'>
+                <p>You can build whatever you want: websites, apps, or hardware (no soldering allowed). All code must be written during the hackathon - feel free to use open source libraries and APIs. Hacks are judged on creativity, technical difficulty, usefulness, and overall awesomeness.</p>
+              </div>
+            </div> 
+          </div>
+          <div class='col-md-4 col-sm-6'>
+            <div class='faq-item panel panel-default'>  
+              <div class='panel-heading'>
+                <h3>Who can come?</h3>
+              </div>
+              <div class='panel-body'>
+                <p>Undergraduate or graduate students. We may also admit high school students but please notify us and you will be accepted on a case-by-case basis. We encourage students of all disciplines to come.</p>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-4 col-sm-6'>
+            <div class='faq-item panel panel-default'>
+              <div class='panel-heading'>
+                <h3>Do I need to have a team?</h3>
+              </div>
+              <div class='panel-body'>
+                <p>Nope! Just come by at the start of the event and you'll find tons of great people to form a team with. You are of course welcome to sign up as a team if you already have a few people in mind. We'd like to limit the teams to no more than 6 per team. You are also welcome to compete as an individual.</p>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-4 col-sm-6'>
+            <div class='faq-item panel panel-default'>
+              <div class='panel-heading'>
+                <h3>How are hacks presented?</h3>
+              </div>
+              <div class='panel-body'>
+                <p>On Sunday at 12:00pm, all hackers will be able to demo their hacks to sponsors and their fellow hackers. Fifteen hacks will be selected based on submitted videos, and these teams/individuals will present their hacks to everyone for two minutes.</p>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-4 col-sm-6'>
+            <div class='faq-item panel panel-default'>
+              <div class='panel-heading'>
+                <h3>Any other rules?</h3>
+              </div>
+              <div class='panel-body'>
+                <p>We're glad you asked! Alcohol is forbidden. Also, no soldering irons, open flames, or anything else you couldn't safely use in a stadium ( ask us if in doubt). No weapons, firearms, etc.</p>
+              </div>
+            </div>
+          </div>
+        </div>           
       </div>
-    </div>
-  </div>
-
-  <!-- start faq -->
-  <div id='faq' >
-    <div class='container'>
-      <h1>Faq</h1>
-      <br>
-      <br>
-      <div class='row'>
-        <div class='col-md-4 col-sm-6'>
-          <div class='faq-item panel panel-default'>
-            <div class='panel-heading'>
-              <h3>What is a hackathon?</h3>
-            </div>
-            <div class='panel-body'>
-              <p>A hackathon is a place where the only thing limiting what you build is your own creativity. Stay up for 36 hours with the smartest people you'll ever meet, building the coolest things you have created and chugging more Red Bull than you ever thought possible.</p>
-            </div>
+    </div><!-- end faq -->
+    <!-- start sponsors -->
+    <div id='sponsors'>
+      <div class='container'>
+        <h1>Sponsors</h1>
+        <h2>&nbsp&nbsp&nbsp&nbsp<em>We need sponsors! <u>Contact us</u></em></h2>
+        <div class='row'>
+          <div class='col-md-12'>
+            <img id='riverside-logo' class='img-responsive' src='assets/img/city.png'></img>
           </div>
-        </div>
-        <div class='col-md-4 col-sm-6'>
-          <div class='faq-item panel panel-default'>
-            <div class='panel-heading'>
-              <h3>What should I create?</h3>
-            </div>
-            <div class='panel-body'>
-              <p>You can build whatever you want: websites, apps, or hardware (no soldering allowed). All code must be written during the hackathon - feel free to use open source libraries and APIs. Hacks are judged on creativity, technical difficulty, usefulness, and overall awesomeness.</p>
-            </div>
-          </div> 
-        </div>
-        <div class='col-md-4 col-sm-6'>
-          <div class='faq-item panel panel-default'>  
-            <div class='panel-heading'>
-              <h3>Who can come?</h3>
-            </div>
-            <div class='panel-body'>
-              <p>Undergraduate or graduate students. We may also admit high school students but please notify us and you will be accepted on a case-by-case basis. We encourage students of all disciplines to come.</p>
-            </div>
-          </div>
-        </div>
-        <div class='col-md-4 col-sm-6'>
-          <div class='faq-item panel panel-default'>
-            <div class='panel-heading'>
-              <h3>Do I need to have a team?</h3>
-            </div>
-            <div class='panel-body'>
-              <p>Nope! Just come by at the start of the event and you'll find tons of great people to form a team with. You are of course welcome to sign up as a team if you already have a few people in mind. We'd like to limit the teams to no more than 6 per team. You are also welcome to compete as an individual.</p>
-            </div>
-          </div>
-        </div>
-        <div class='col-md-4 col-sm-6'>
-          <div class='faq-item panel panel-default'>
-            <div class='panel-heading'>
-              <h3>How are hacks presented?</h3>
-            </div>
-            <div class='panel-body'>
-              <p>On Sunday at 12:00pm, all hackers will be able to demo their hacks to sponsors and their fellow hackers. Fifteen hacks will be selected based on submitted videos, and these teams/individuals will present their hacks to everyone for two minutes.</p>
-            </div>
-          </div>
-        </div>
-        <div class='col-md-4 col-sm-6'>
-          <div class='faq-item panel panel-default'>
-            <div class='panel-heading'>
-              <h3>Any other rules?</h3>
-            </div>
-            <div class='panel-body'>
-              <p>We're glad you asked! Alcohol is forbidden. Also, no soldering irons, open flames, or anything else you couldn't safely use in a stadium ( ask us if in doubt). No weapons, firearms, etc.</p>
-            </div>
-          </div>
-        </div>
-      </div>           
-    </div>
-  </div><!-- end faq -->
-
-  <!-- start sponsors -->
-  <div id='sponsors'>
-    <div class='container'>
-      <h1>Sponsors</h1>
-      <h2>&nbsp&nbsp&nbsp&nbsp<em>We need sponsors! <u>Contact us</u></em></h2>
-      <div class='row' style='padding-top: 40px'>
-        <div class='col-md-12 sponsor-col'>
-          <img class='img-responsive sponsor-lg' src='assets/img/city.png'></img>
-        </div>
-      </div> 
-    </div>
-  </div><!-- end sponsors -->
-
-  <!-- start Judges -->
-  <div id='judges'>
-    <div class='container'>
-      <h1>Judges</h1>
-      <h2>&nbsp&nbsp&nbsp&nbsp<em>Finding awesome people now. Stay tuned.</em></h2>
-    </div>
-  </div><!-- end Judges -->
-
-  <!-- start past projects -->
-  <div id='past-projects'>
-    <div class='container'>
-      <h1>Need some inspiration?</h1>
-      <h2>&nbsp&nbsp&nbsp&nbsp<em>Here are some works in progress...</em></h2>
-      <div class='container' id='project-frame'>
-        <a href='http://frozen-meadow-4020.herokuapp.com/#/landing' target='_blank'>
-          <img class='img-responsive' src='assets/img/dockit.png'></img>
-        </a>
+        </div> 
       </div>
-    </div>
-  </div><!-- end past projects -->
+    </div><!-- end sponsors -->
+    <!-- start Judges -->
+    <div id='judges'>
+      <div class='container'>
+        <h1>Judges</h1>
+        <h2>&nbsp&nbsp&nbsp&nbsp<em>Finding awesome people now. Stay tuned.</em></h2>
+      </div>
+    </div><!-- end Judges -->
+    <!-- start past projects -->
+    <div id='past-projects'>
+      <div class='container'>
+        <h1>Need some inspiration?</h1>
+        <h2>&nbsp&nbsp&nbsp&nbsp<em>Here are some works in progress...</em></h2>
+        <div class='container' id='project-frame'>
+          <a href='http://frozen-meadow-4020.herokuapp.com/#/landing' target='_blank'>
+            <img class='img-responsive' src='assets/img/dockit.png'></img>
+          </a>
+        </div>
+      </div>
+    </div><!-- end past projects -->
+  </div><!-- end wrapper -->
 
-  <!-- start footer -->
-  <!-- needed to fix footer in Safari -->
-  <div style='width:100%; height:1px; z-index: -1; background-color:#292429'></div>
-  <div id='footer'>
-    <div class='container'>
-      <h2>Presented by</h2>
-      <img class='img-responsive' src='assets/img/acmlogoucr.png'></img>
-      <h4 id='made-by'>Made with <span id='heart'>♥</span> by Manuel Sanchez</h4>
-    </div>
-  </div><!-- end footer -->
-  
   <!-- start scripts -->
   <!-- vendors -->
   <script src='assets/js/vendors/jquery-1.11.1.js'></script>
-  <script src='assets/js/vendors/jquery.slides.min.js'></script> 
-  <script src='assets/js/vendors/paper-full.min.js'></script>
   <script src='assets/js/vendors/bootstrap.min.js'></script>
-  <script src='assets/js/vendors/highlight.pack.js'></script>
-  <script src='assets/js/vendors/typed.js'></script>
   <!-- our minified compiled script -->
   <script src='assets/js/citrushack.js'></script>
-  <!-- Need to enable highlight.js syntax highlighting -->
-  <script>
-    hljs.initHighlightingOnLoad();
-  </script>
   <!-- start google analytics -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

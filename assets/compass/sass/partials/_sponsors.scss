@@ -1,47 +1,33 @@
-$sponsors-padding-bottom: 50px;
-$sponsor-lg-height: 200px;
-$sponsor-md-height: 100px;
-$sponsor-md-padding: 15px;
+$sponsors-bottom: 50px;
+$sponsors-top: 40px;
 $sponsor-bg: white;
+$sponsor-col-top: 40px;
 
 #sponsors {
-  background-color: white;
-  padding-top: 40px;
-  position: relative;
-  z-index: 1;
-  padding-bottom: $sponsors-padding-bottom;
-  .container h1 {
-    color: black;
+  background-color: $sponsor-bg;
+  padding-top: $sponsors-top;
+  padding-bottom: $sponsors-bottom;
+  color: black; 
+  [class|=col] {
+    //Center all logos
+    text-align:center;
+    vertical-align:center;
+    //separate a little
+    padding-top: $sponsor-col-top;
   }
-}
-
-.sponsor-col {
-  text-align: center;
-  vertical-align: middle;
-}
-
-.sponsor-lg {
-  @include transition(opacity 1s);
-  max-height: $sponsor-lg-height;
-  display: inline-block;
-  opacity: .5;
-
-  &:hover {
-    opacity: 1;
+  img {
+    //needed for text-align to work
+    display: inline-block; 
+    //hover effect
+    opacity: .5;
+    @include transition-property(opacity);
+    @include transition-duration(1s);
+    &:hover {
+      opacity: 1;
+    }
   }
-}
-
-
-.sponsor-md {
-  @include transition(opacity 1s);
-  height: $sponsor-md-height;
-  display: inline-block;
-  padding-top: $sponsor-md-padding;
-  padding-bottom: $sponsor-md-padding;
-  opacity: .5;
-
-  &:hover {
-    opacity: 1;
+  #riverside-logo {
+    max-width: 30%;
   }
 }
 

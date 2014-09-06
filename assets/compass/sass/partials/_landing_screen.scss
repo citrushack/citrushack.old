@@ -1,105 +1,104 @@
 /* landing section */
 
-#logo {
+$max-logo-width: 300px;
+$max-logo-height: 30%;
+$max-name-width: 300px;
+$max-name-height: 30%;
 
-  max-width: 300px;
-  max-height: 30%;
+$landing-container-top: 40px;
+$landing-container-bottom: 20px;
 
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+$landing-content-top: 20px;
+$landing-content-color: white;
 
-  &:hover {
-    @include transition-property(transform);
-    @include transition-duration(1s);
-    @include transform(scale(.8) skew(10deg));
-  }
-
-}
-
-#name {
-  max-width: 300px;
-  max-height: 30%;
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#arrow-down {
-  @include translate(-50%,0);
-  @include transition-property(opacity);
-  @include transition-duration(1s);
-  opacity: .6;
-  display: block;
-  left: 50%;
-  position: absolute;
-  bottom: 0px;
-
-  &:hover {
-    opacity: .9;
-  }
-}
+$landing-btn-group-top: 40px;
+$landing-btn-color: lighten($bloodorange-red, 5%);
+$landing-btn-hover-color: darken($bloodorange-red, 5%);
+$landing-btn-focus-color: $bloodorange-red;
+$landing-btn-radius: 5px;
+$landing-btn-spacing: 20px;
+$landing-btn-width: 160px;
+$landing-btn-height: 14px;
 
 #landing {
   @include set-size(100%,100%); 
 
+  //Black filter over tree background
   background: linear-gradient(
                 rgba(#000000,.5)
               , rgba(#000000,.5)
               )
             , image-url('treeee.jpg');
-
-  background-position: center center;
   @include background-size(cover);
-
-  position: relative;
-  z-index: 1;
+  background-position: center center;
 
   padding: 0;
   margin: 0;
   overflow: hidden;
-
   .container {
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding-top: $landing-container-top;
+    padding-bottom: $landing-container-bottom;
+
+    #logo {
+      @include horizontal-center();
+      max-width: $max-logo-width;
+      max-height: $max-logo-height; 
+      //Squeeze effect on hover
+      &:hover {
+        @include transition-property(transform);
+        @include transition-duration(1s);
+        @include transform(scale(.8) skew(10deg));
+      }
+
+    }
+
+    #name {
+      @include horizontal-center();
+      max-width: $max-name-width;
+      max-height: $max-name-height;
+    }
+
+    #arrow-down {
+      //Center arrow horizontally and fixed to bottom of landing.
+      @include translate(-50%,0);
+      position: absolute;
+      left: 50%;
+      bottom: 0px;
+      //Hover transition
+      @include transition-property(opacity);
+      @include transition-duration(1s);
+      opacity: .6;
+      &:hover {
+        opacity: .9;
+      }
+    }
 
     #content {
-      
-      padding-top: 20px;
-
-      #catchphrase {
-        text-align: center;
-        color: white;
-      }
-
-      #date {
-        text-align: center;
-        color: white;
-      }
-
+      padding-top: $landing-content-top;
+      text-align: center;
+      color: $landing-content-color;
       #button-group {
-        margin-top: 70px;
-
+        padding-top: $landing-btn-group-top;
         button {
-          display: block;
-          background-color: lighten($bloodorange-red, 5%);
-          border-color: lighten($bloodorange-red,5%);
-          border-radius: 5px;
+          @include horizontal-center();
+          //Set background color and custom border
+          background-color: $landing-btn-color; 
+          border-color: $landing-btn-color;
+          border-radius: $landing-btn-radius;
           border-style: none;
           color: white;
-          margin-left:auto;
-          margin-right:auto;
-          margin-top:20px;
-          padding: 7px 80px 7px 80px;
-
+          //padding and spacing
+          margin-top:$landing-btn-spacing;
+          padding-left: $landing-btn-width / 2;
+          padding-right: $landing-btn-width / 2;
+          padding-top: $landing-btn-height / 2;
+          padding-bottom: $landing-btn-height / 2;
           &:focus {
-            @include box-shadow (0px 0px 3pt 2pt $bloodorange-red);
+            @include box-shadow (0px 0px 3pt 2pt $landing-btn-focus-color);
             outline: none;
           }
-
           &:hover {
-            background-color: darken($bloodorange-red, 5%);
+            background-color: $landing-btn-hover-color;
           }
         }
       }

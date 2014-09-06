@@ -1,27 +1,11 @@
-#past-projects {
-  background-color: #6E1A11;
-  position: relative;
-  z-index: 1;
-  margin-bottom: 299px;
-  padding-top: 40px;
-  color: white;
+$proj-bg: $dark-red;
+$proj-top: 40px;
 
-  /* spikey border */
-  &:after {
-    content: '';
-    position: absolute;
-    left: 0; bottom: -3rem;
-    font-size: 0.3rem;
-    background:
-      linear-gradient(135deg, #6E1A11 25%, transparent 25%) -3em 0,
-      linear-gradient(225deg, #6E1A11 25%, transparent 25%) -3em 0;
-    background-size: 3rem 100%;
-    background-color: transparent;
-    height: 3rem;
-    width: 100%;
-    border: none;
-    margin: 0;
-  }
+
+#past-projects {
+  background-color: $proj-bg;
+  padding-top: $proj-top;
+  color: white;
 }
 
 #project-frame {

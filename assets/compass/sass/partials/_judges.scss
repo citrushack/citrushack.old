@@ -1,6 +1,9 @@
+$judges-bottom: 50px;
+$judges-top: 40px;
+$judges-bg: white;
+
 #judges {
-  padding-bottom: 50px;
-  background-color: white;
-  position: relative;
-  z-index: 1;
+  padding-bottom: $judges-bottom;
+  padding-top: $judges-top;
+  background-color: $judges-bg;
 }

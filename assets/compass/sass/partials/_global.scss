@@ -3,14 +3,8 @@
   margin: 0px;
 }
 
-html {
+html, body {
   @include set-size(100%,100%);
-}
-
-body {
-  @include set-size(100%,100%);
-  /* needed for scrollspy */
-  position: relative;
 }
 
 p {
@@ -25,4 +19,9 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 4em;
   letter-spacing: 0.0325em;
+}
+
+#wrapper {
+  @include set-size(100%,auto);
+  position: relative;
 }
