@@ -30,6 +30,7 @@ $landing-btn-height: 14px;
               )
             , image-url('treeee.png');
   @include background-size(cover);
+  background-attachment: fixed;
   background-position: center center;
 
   padding: 0;
