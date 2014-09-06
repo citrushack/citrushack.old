@@ -21,7 +21,6 @@ var paths = {
        concatenated. */
     scripts : [
       './assets/js/source/global.js'
-    , './assets/js/source/nav.js'
     , './assets/js/source/landing_screen.js'
     , './assets/js/source/faq.js'
     , './assets/js/source/sponsors.js'
