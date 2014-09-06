@@ -10,6 +10,9 @@ assets/js/citrushack.js
 # vim related
 *.swp
 
+# firebase test deployment
+firebase.json
+
 # sass related
 .sass-cache
 .DS_Store
