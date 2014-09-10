@@ -6,6 +6,22 @@ $proj-top: 40px;
   background-color: $proj-bg;
   padding-top: $proj-top;
   color: white;
+  /* spikey border taken from http://tjacobdesign.com/category/css/ */
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -3rem;
+    font-size: 0.3rem;
+    background:
+      linear-gradient(135deg, $proj-bg 25%, transparent 25%) -3em 0,
+      linear-gradient(225deg, $proj-bg 25%, transparent 25%) -3em 0;
+    background-size: 3rem 100%;
+    background-color: transparent;
+    height: 3rem;
+    width: 100%;
+    border: none;
+    margin: 0;
+  }
 }
 
 #project-frame {
