@@ -24,4 +24,5 @@ h1 {
 #wrapper {
   @include set-size(100%,auto);
   position: relative;
+  margin-bottom: $footer-height;
 }

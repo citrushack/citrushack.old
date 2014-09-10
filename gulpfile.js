@@ -24,6 +24,7 @@ var paths = {
     , './assets/js/source/landing_screen.js'
     , './assets/js/source/faq.js'
     , './assets/js/source/sponsors.js'
+    , './assets/js/source/footer.js'
     ]
     /* name of our final minified, combined script */
   , main_script : 'citrushack.js'

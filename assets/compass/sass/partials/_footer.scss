@@ -1,0 +1,20 @@
+$footer-bg: $vormator-black;
+
+#footer {
+  @include set-size(100%, $footer-height);
+  background-color: $vormator-darkgrey;
+  position: fixed;
+  bottom: 0; left: 0;
+  z-index: -1;
+
+  .container {
+    text-align:center;
+    color: $vormator-grey;
+    h1 {
+      #heart {
+        color: $vormator-magenta;      
+      }
+      font-size: 2em;
+    }
+  }
+}
