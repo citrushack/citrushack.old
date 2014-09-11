@@ -1,5 +1,13 @@
 $footer-bg: $vormator-black;
 
+$footer-btn-color: $bloodorange-red;
+$footer-btn-radius: 5px;
+$footer-btn-height: 14px;
+$footer-btn-width: 40px;
+$footer-btn-spacing: 1px;
+$footer-btn-focus-color: $bloodorange-red;
+$footer-btn-hover-color: darken($bloodorange-red, 5%);
+
 #footer {
   @include set-size(100%, $footer-height);
   background-color: $vormator-darkgrey;
@@ -17,8 +25,31 @@ $footer-bg: $vormator-black;
     }
 
     form {
+      @include horizontal-center();
       margin-top: 15px;
-      width: 30%;
+      width: 70%;
+
+      button {
+        //Set background color and custom border
+        background-color: $footer-btn-color; 
+        border-color: $footer-btn-color;
+        border-radius: $footer-btn-radius;
+        border-style: none;
+        color: white;
+        //padding and spacing
+        margin-top:$footer-btn-spacing;
+        padding-left: $footer-btn-width / 2;
+        padding-right: $footer-btn-width / 2;
+        padding-top: $footer-btn-height / 2;
+        padding-bottom: $footer-btn-height / 2;
+        &:focus {
+          @include box-shadow (0px 0px 3pt 2pt $footer-btn-focus-color);
+          outline: none;
+        }
+        &:hover {
+          background-color: $footer-btn-hover-color;
+        }
+      }
     }
   }
 }
