@@ -20,6 +20,8 @@ $landing-btn-spacing: 20px;
 $landing-btn-width: 160px;
 $landing-btn-height: 14px;
 
+$landing-coming-soon-bg: darken($bloodorange-red, 5%);
+
 #landing {
   @include set-size(100%,100%); 
 
@@ -102,6 +104,14 @@ $landing-btn-height: 14px;
             background-color: $landing-btn-hover-color;
           }
         }
+      }
+      #coming-soon {
+        @include horizontal-center();
+        margin-top: 60px;
+        background-color: $landing-coming-soon-bg;
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+        width:30%;
       }
     }
   }
