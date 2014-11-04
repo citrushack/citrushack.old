@@ -16,6 +16,7 @@ $(document).ready(function(){
   }
 
   footerView();
+
   $(document).scroll(function(){
     footerView();
   });

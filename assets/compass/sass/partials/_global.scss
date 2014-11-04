@@ -28,3 +28,16 @@ h1 {
      footer and content */
   margin-bottom: $footer-height - 1;
 }
+
+#social-media {
+  position:fixed;
+  z-index:9999;
+  top:10px;
+  right:10px;
+  height:20px;
+  overflow:hidden;
+
+  #twitter {
+    padding-top: 5px;
+  }
+}
